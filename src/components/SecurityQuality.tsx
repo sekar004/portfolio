@@ -34,13 +34,13 @@ export const SecurityQuality: React.FC = () => {
         {/* Title */}
         <div className="text-center max-w-3xl mx-auto mb-14 space-y-3">
           <span className="text-xs font-mono font-bold tracking-widest text-blue-400 uppercase">
-            SECURITY & CODE QUALITY
+            CODE ANALYSIS & SECURITY
           </span>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-white">
-            DevSecOps & Code Analysis
+            Code Analysis & Security
           </h2>
           <p className="text-slate-400 text-sm">
-            Integrated security gates and quality analysis built directly into automated CI/CD pipelines.
+            Integrated security testing and code quality checks built into CI/CD pipelines.
           </p>
         </div>
 

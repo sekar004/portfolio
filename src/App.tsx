@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { About } from './components/About';
@@ -11,8 +11,6 @@ import { ServerAutomation } from './components/ServerAutomation';
 import { MonitoringObservability } from './components/MonitoringObservability';
 import { SecurityQuality } from './components/SecurityQuality';
 import { ProfessionalExperience } from './components/ProfessionalExperience';
-import { SelectedDevopsWork } from './components/SelectedDevopsWork';
-import { CodeAutomation } from './components/CodeAutomation';
 import { Education } from './components/Education';
 import { ResumeCta } from './components/ResumeCta';
 import { Contact } from './components/Contact';
@@ -21,6 +19,25 @@ import { ResumeModal } from './components/ResumeModal';
 
 export const App: React.FC = () => {
   const [resumeModalOpen, setResumeModalOpen] = useState(false);
+  const [theme, setTheme] = useState<'dark' | 'light'>('dark');
+
+  useEffect(() => {
+    // Theme initialization
+    const savedTheme = localStorage.getItem('portfolio-theme') as 'dark' | 'light' | null;
+    if (savedTheme) {
+      setTheme(savedTheme);
+      document.documentElement.className = savedTheme;
+    } else {
+      document.documentElement.className = 'dark';
+    }
+  }, []);
+
+  const handleToggleTheme = () => {
+    const nextTheme = theme === 'dark' ? 'light' : 'dark';
+    setTheme(nextTheme);
+    localStorage.setItem('portfolio-theme', nextTheme);
+    document.documentElement.className = nextTheme;
+  };
 
   const handleOpenResume = () => {
     setResumeModalOpen(true);
@@ -31,9 +48,15 @@ export const App: React.FC = () => {
   };
 
   return (
-    <div className="relative bg-[#050814] text-slate-100 min-h-screen selection:bg-blue-600 selection:text-white">
-      {/* Navbar */}
-      <Navbar onOpenResume={handleOpenResume} />
+    <div className={`relative min-h-screen selection:bg-blue-600 selection:text-white transition-colors duration-300 ${
+      theme === 'dark' ? 'bg-[#050814] text-slate-100' : 'bg-slate-50 text-slate-900'
+    }`}>
+      {/* Navbar with Theme Switcher */}
+      <Navbar 
+        onOpenResume={handleOpenResume} 
+        theme={theme}
+        onToggleTheme={handleToggleTheme}
+      />
 
       {/* Main Content Sections */}
       <main>
@@ -48,8 +71,6 @@ export const App: React.FC = () => {
         <MonitoringObservability />
         <SecurityQuality />
         <ProfessionalExperience />
-        <SelectedDevopsWork />
-        <CodeAutomation />
         <Education />
         <ResumeCta onOpenResume={handleOpenResume} />
         <Contact />

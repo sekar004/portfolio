@@ -16,10 +16,10 @@ export const MonitoringObservability: React.FC = () => {
         {/* Title */}
         <div className="text-center max-w-3xl mx-auto mb-14 space-y-3">
           <span className="text-xs font-mono font-bold tracking-widest text-blue-400 uppercase">
-            MONITORING & OBSERVABILITY
+            MONITORING
           </span>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-white">
-            System Telemetry & Health Dashboard
+            Monitoring & Observability
           </h2>
           <p className="text-slate-400 text-sm">
             Real-time monitoring, metrics collection, and alerting for cloud infrastructure.
@@ -41,10 +41,10 @@ export const MonitoringObservability: React.FC = () => {
                 </span>
               </div>
               
-              {/* Illustrative Notice */}
+              {/* Notice */}
               <div className="flex items-center gap-1.5 px-3 py-1 rounded-md bg-blue-950/80 border border-blue-500/30 text-[10px] font-mono text-cyan-300">
                 <Info className="w-3 h-3 text-cyan-400" />
-                <span>Illustrative Portfolio Metrics</span>
+                <span>Monitoring Visuals</span>
               </div>
             </div>
 
