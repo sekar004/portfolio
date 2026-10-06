@@ -52,15 +52,15 @@ export const Projects: React.FC = () => {
           {projects.map((proj) => (
             <div
               key={proj.id}
-              className="glass-panel glass-panel-hover rounded-2xl p-6 border border-blue-500/25 flex flex-col justify-between space-y-5 group"
+              className="glass-panel glass-panel-hover rounded-2xl p-6 border border-blue-500/25 light:border-slate-300 flex flex-col justify-between space-y-5 group"
             >
               <div className="space-y-4">
                 <div className="flex items-center justify-between">
-                  <span className="text-[10px] font-mono font-bold text-cyan-400 bg-blue-950/80 px-2.5 py-1 rounded border border-blue-500/30">
+                  <span className="text-[10px] font-mono font-bold text-cyan-400 light:text-blue-800 bg-blue-950/80 light:bg-blue-100 px-2.5 py-1 rounded border border-blue-500/30 light:border-blue-300">
                     {proj.environment}
                   </span>
-                  <div className="p-2 rounded-xl bg-slate-900/90 light:bg-slate-200 border border-slate-800">
-                    <Layers className="w-4 h-4 text-blue-400" />
+                  <div className="p-2 rounded-xl bg-slate-900/90 light:bg-slate-200 border border-slate-800 light:border-slate-300">
+                    <Layers className="w-4 h-4 text-blue-400 light:text-blue-600" />
                   </div>
                 </div>
 
@@ -73,8 +73,8 @@ export const Projects: React.FC = () => {
                 </p>
 
                 {/* Architecture Preview Box */}
-                <div className="p-3 rounded-xl bg-[#040714] light:bg-slate-100 border border-slate-800 font-mono text-[11px] text-cyan-300 light:text-blue-700">
-                  <span className="text-[10px] text-slate-500 block mb-1">ARCHITECTURE FLOW:</span>
+                <div className="p-3 rounded-xl bg-[#040714] light:bg-slate-100 border border-slate-800 light:border-slate-300 font-mono text-[11px] text-cyan-300 light:text-blue-800">
+                  <span className="text-[10px] text-slate-500 light:text-slate-600 block mb-1">ARCHITECTURE FLOW:</span>
                   {proj.architecture}
                 </div>
 
@@ -83,7 +83,7 @@ export const Projects: React.FC = () => {
                   {proj.techs.map((t, tIdx) => (
                     <span 
                       key={tIdx} 
-                      className="px-2.5 py-1 rounded bg-slate-900/80 light:bg-slate-200 border border-slate-800 text-[10px] font-mono text-slate-300 light:text-slate-700"
+                      className="px-2.5 py-1 rounded bg-slate-900/80 light:bg-slate-200 border border-slate-800 light:border-slate-300 text-[10px] font-mono text-slate-300 light:text-slate-800"
                     >
                       {t}
                     </span>
@@ -92,14 +92,14 @@ export const Projects: React.FC = () => {
               </div>
 
               {/* Action Buttons */}
-              <div className="pt-4 border-t border-slate-800/80 flex items-center gap-3">
+              <div className="pt-4 border-t border-slate-800/80 light:border-slate-200 flex items-center gap-3">
                 <a
                   href="https://github.com/sekar004"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex-1 py-2.5 px-3 rounded-xl bg-slate-900/90 light:bg-slate-200 hover:bg-slate-800 border border-slate-700 text-slate-200 light:text-slate-800 text-xs font-semibold flex items-center justify-center gap-2 transition-all"
+                  className="flex-1 py-2.5 px-3 rounded-xl bg-slate-900/90 light:bg-white hover:bg-slate-800 light:hover:bg-slate-100 border border-slate-700 light:border-slate-300 text-slate-200 light:text-slate-800 text-xs font-semibold flex items-center justify-center gap-2 transition-all shadow-sm"
                 >
-                  <GitHubIcon size={14} />
+                  <GitHubIcon size={14} className="text-white light:text-slate-900" />
                   <span>GitHub</span>
                 </a>
 

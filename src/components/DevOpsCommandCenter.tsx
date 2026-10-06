@@ -33,16 +33,16 @@ export const DevOpsCommandCenter: React.FC = () => {
         </div>
 
         {/* Pipeline Container */}
-        <div className="glass-panel rounded-3xl p-6 sm:p-10 border border-blue-500/30 shadow-2xl space-y-8">
+        <div className="glass-panel rounded-3xl p-6 sm:p-10 border border-blue-500/30 light:border-slate-300 shadow-2xl space-y-8">
           
-          <div className="flex flex-wrap items-center justify-between gap-4 pb-4 border-b border-blue-900/40">
+          <div className="flex flex-wrap items-center justify-between gap-4 pb-4 border-b border-blue-900/40 light:border-slate-200">
             <div className="flex items-center gap-2">
               <span className="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse" />
-              <span className="text-xs font-mono font-bold text-white uppercase tracking-wider">
+              <span className="text-xs font-mono font-bold text-white light:text-slate-900 uppercase tracking-wider">
                 DEVOPS PIPELINE STATE: ACTIVE & HEALTHY
               </span>
             </div>
-            <span className="text-[11px] font-mono text-cyan-400 bg-blue-950/80 px-3 py-1 rounded-md border border-blue-500/30 font-bold">
+            <span className="text-[11px] font-mono text-cyan-400 light:text-blue-800 bg-blue-950/80 light:bg-blue-100 px-3 py-1 rounded-md border border-blue-500/30 light:border-blue-300 font-bold">
               0 Failures • Zero Downtime
             </span>
           </div>
@@ -51,12 +51,12 @@ export const DevOpsCommandCenter: React.FC = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-4 relative">
             {pipelineStages.map((stage, idx) => (
               <div key={idx} className="relative group">
-                <div className={`p-4 rounded-2xl bg-slate-900/90 light:bg-white border ${stage.color} group-hover:border-cyan-400 transition-all flex flex-col justify-between h-full space-y-3 shadow-lg group-hover:scale-105`}>
+                <div className={`p-4 rounded-2xl bg-slate-900/90 light:bg-white border ${stage.color} light:border-slate-300 group-hover:border-cyan-400 transition-all flex flex-col justify-between h-full space-y-3 shadow-lg group-hover:scale-105`}>
                   <div className="flex items-center justify-between">
-                    <span className="text-[10px] font-mono font-bold text-cyan-400 bg-blue-950/80 px-2 py-0.5 rounded">
+                    <span className="text-[10px] font-mono font-bold text-cyan-400 light:text-blue-800 bg-blue-950/80 light:bg-blue-100 px-2 py-0.5 rounded">
                       0{idx + 1}
                     </span>
-                    <div className="p-2 rounded-xl bg-slate-950 border border-slate-800">
+                    <div className="p-2 rounded-xl bg-slate-950 light:bg-slate-100 border border-slate-800 light:border-slate-200">
                       {stage.icon}
                     </div>
                   </div>

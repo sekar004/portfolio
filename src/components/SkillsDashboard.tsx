@@ -29,7 +29,7 @@ export const SkillsDashboard: React.FC = () => {
       icon: <GitBranch className="w-4 h-4 text-red-400" />,
       skills: [
         { name: 'Jenkins', icon: <JenkinsIcon size={20} /> },
-        { name: 'GitHub', icon: <GitHubIcon size={20} className="text-white" /> },
+        { name: 'GitHub', icon: <GitHubIcon size={20} className="text-white light:text-slate-900" /> },
         { name: 'GitLab', icon: <GitLabIcon size={20} /> },
       ],
     },

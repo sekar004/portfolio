@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@custom-variant light (&:where(.light, .light *));
+
 @layer base {
   :root {
     --font-sans: 'Lexend', -apple-system, BlinkMacSystemFont, sans-serif;
