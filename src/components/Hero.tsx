@@ -74,7 +74,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResume }) => {
             {/* Social Links */}
             <div className="flex items-center gap-3 pt-4 border-t border-slate-800/80 light:border-slate-300">
               <a
-                href="https://www.linkedin.com/in/sekar-s"
+                href="https://www.linkedin.com/in/sekar-s/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 px-3.5 py-2 rounded-xl bg-slate-900/60 light:bg-white border border-slate-800 text-xs font-bold text-slate-300 light:text-slate-800 hover:text-blue-400 transition-all"

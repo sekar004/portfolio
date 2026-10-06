@@ -59,7 +59,7 @@ export const Footer: React.FC<FooterProps> = () => {
             </a>
 
             <a 
-              href="https://www.linkedin.com/in/sekar-s" 
+              href="https://www.linkedin.com/in/sekar-s/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="p-2 rounded-xl bg-slate-900 border border-slate-800 text-slate-300 hover:text-blue-400 transition-colors"

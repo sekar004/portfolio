@@ -95,7 +95,7 @@ LANGUAGES
             <h1 className="text-2xl font-extrabold text-white light:text-slate-900">SEKAR S</h1>
             <p className="text-sm font-mono text-cyan-400 light:text-blue-700 font-bold">DevOps Engineer</p>
             <p className="text-xs text-slate-400 light:text-slate-600 mt-1">
-              shanmugamsekar004@gmail.com • linkedin.com/in/sekar-s • Gobichettipalayam
+              shanmugamsekar004@gmail.com • linkedin.com/in/sekar-s/ • Gobichettipalayam
             </p>
           </div>
 

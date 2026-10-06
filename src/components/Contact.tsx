@@ -55,7 +55,7 @@ export const Contact: React.FC = () => {
 
             {/* LinkedIn Card */}
             <a 
-              href="https://www.linkedin.com/in/sekar-s"
+              href="https://www.linkedin.com/in/sekar-s/"
               target="_blank"
               rel="noopener noreferrer"
               className="glass-panel glass-panel-hover rounded-2xl p-5 border border-blue-500/20 flex items-center gap-4 group"
