@@ -95,15 +95,17 @@ export const MonitoringObservability: React.FC = () => {
 
             </div>
 
-            {/* Simulated Log Stream Box */}
-            <div className="bg-[#050917] light:bg-slate-900 p-4 rounded-xl border border-slate-800 font-mono text-[11px] space-y-1.5 text-slate-300">
-              <div className="text-slate-500 border-b border-slate-800/80 pb-1 mb-2 text-[10px] flex justify-between">
-                <span>PROMETHEUS LOG STREAM</span>
-                <span className="text-emerald-400">LIVE</span>
+            {/* Visual Monitoring Telemetry Artwork Image */}
+            <div className="relative rounded-2xl overflow-hidden border border-blue-500/30 group shadow-2xl">
+              <img 
+                src="/images/monitoring_dashboard.jpg" 
+                alt="DevOps Monitoring & Telemetry Dashboard Visual" 
+                className="w-full h-auto object-cover rounded-2xl group-hover:scale-105 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent pointer-events-none" />
+              <div className="absolute bottom-3 left-4 text-xs font-mono font-bold text-cyan-300 bg-slate-950/80 px-3 py-1.5 rounded-lg border border-cyan-500/40">
+                Prometheus & Grafana Telemetry Metrics Console
               </div>
-              <p className="text-emerald-400">[INFO] k8s-ingress-controller: TLS certificate validated successfully.</p>
-              <p className="text-cyan-300">[INFO] prometheus-exporter: Scraping metrics from 12 active pods.</p>
-              <p className="text-slate-300">[INFO] grafana-agent: Dashboard state synced (0 errors).</p>
             </div>
 
           </div>

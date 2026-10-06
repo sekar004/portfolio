@@ -28,46 +28,29 @@ export const CloudArchitecture: React.FC = () => {
           </p>
         </div>
 
-        {/* Visual Infrastructure Network Diagram Graphic */}
-        <div className="mb-8 p-5 sm:p-6 rounded-3xl glass-panel border border-blue-500/30 light:border-slate-300 space-y-4">
+        {/* Visual Infrastructure Network Diagram Graphic with Real Image */}
+        <div className="mb-8 p-4 sm:p-6 rounded-3xl glass-panel border border-blue-500/30 light:border-slate-300 space-y-4 shadow-2xl">
           <div className="flex items-center justify-between border-b border-blue-900/40 light:border-slate-200 pb-3">
             <div className="flex items-center gap-2 text-xs font-mono font-bold text-cyan-400 light:text-blue-700 uppercase tracking-wider">
               <Network className="w-4 h-4 text-cyan-400 light:text-blue-600" />
-              <span>LIVE MULTI-CLOUD ARCHITECTURE DIAGRAM</span>
+              <span>LIVE MULTI-CLOUD ARCHITECTURE TOPOLOGY</span>
             </div>
-            <span className="text-[10px] font-mono text-emerald-400 bg-emerald-950/80 light:bg-emerald-100 px-2.5 py-1 rounded border border-emerald-500/30 font-bold">
+            <span className="text-[10px] font-mono text-emerald-400 light:text-emerald-700 bg-emerald-950/80 light:bg-emerald-100 px-2.5 py-1 rounded border border-emerald-500/30 font-bold">
               High Availability • Auto-Scaling
             </span>
           </div>
 
-          {/* Interactive Cloud Diagram Graphic Node Map */}
-          <div className="bg-[#050816] light:bg-slate-900 p-5 rounded-2xl border border-slate-800 grid grid-cols-1 md:grid-cols-4 gap-4 items-center text-center font-mono">
-            
-            {/* Node 1: Edge / Gateway */}
-            <div className="p-3.5 rounded-xl bg-blue-950/70 border border-blue-500/40 space-y-1 shadow-lg">
-              <div className="w-3 h-3 rounded-full bg-cyan-400 mx-auto animate-ping mb-1" />
-              <span className="text-xs font-bold text-cyan-300 block">Cloudflare DNS / Route53</span>
-              <span className="text-[10px] text-slate-400">Global Anycast SSL/TLS</span>
+          {/* DevOps Visual Graphic Artwork Image */}
+          <div className="relative rounded-2xl overflow-hidden border border-blue-500/30 group shadow-2xl">
+            <img 
+              src="/images/cloud_architecture.jpg" 
+              alt="DevOps Cloud Infrastructure Architecture Diagram" 
+              className="w-full h-auto object-cover rounded-2xl group-hover:scale-105 transition-transform duration-500"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent pointer-events-none" />
+            <div className="absolute bottom-3 left-4 text-xs font-mono font-bold text-cyan-300 bg-slate-950/80 px-3 py-1.5 rounded-lg border border-cyan-500/40">
+              AWS & Azure Hybrid Infrastructure Backbone Map
             </div>
-
-            {/* Node 2: VPC / Load Balancer */}
-            <div className="p-3.5 rounded-xl bg-slate-900 border border-amber-500/40 space-y-1 shadow-lg">
-              <span className="text-xs font-bold text-amber-400 block">AWS ALB / Ingress</span>
-              <span className="text-[10px] text-slate-400">VPC Public Subnet</span>
-            </div>
-
-            {/* Node 3: Container Instances */}
-            <div className="p-3.5 rounded-xl bg-slate-900 border border-indigo-500/40 space-y-1 shadow-lg">
-              <span className="text-xs font-bold text-indigo-400 block">Docker / EKS Cluster</span>
-              <span className="text-[10px] text-slate-400">Private Subnet Auto-Scaling</span>
-            </div>
-
-            {/* Node 4: Database & Storage */}
-            <div className="p-3.5 rounded-xl bg-purple-950/70 border border-purple-500/40 space-y-1 shadow-lg">
-              <span className="text-xs font-bold text-purple-300 block">RDS MySQL & S3 Buckets</span>
-              <span className="text-[10px] text-slate-400">Encrypted Backups</span>
-            </div>
-
           </div>
         </div>
 

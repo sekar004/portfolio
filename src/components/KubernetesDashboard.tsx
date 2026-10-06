@@ -73,22 +73,16 @@ export const KubernetesDashboard: React.FC = () => {
               </div>
             </div>
 
-            {/* Visual Control Plane Node Flow Diagram */}
-            <div className="p-4 rounded-xl bg-[#050816] light:bg-slate-900 border border-slate-800 space-y-2 font-mono">
-              <span className="text-[10px] text-cyan-400 font-bold uppercase tracking-wider block">K8S CONTROL PLANE TOPOLOGY:</span>
-              <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 text-center text-[11px]">
-                <div className="p-2 rounded-lg bg-blue-950/70 border border-blue-500/30 text-cyan-300">
-                  kube-apiserver
-                </div>
-                <div className="p-2 rounded-lg bg-slate-900 border border-purple-500/30 text-purple-300">
-                  etcd storage
-                </div>
-                <div className="p-2 rounded-lg bg-slate-900 border border-emerald-500/30 text-emerald-300">
-                  kube-scheduler
-                </div>
-                <div className="p-2 rounded-lg bg-slate-900 border border-indigo-500/30 text-indigo-300">
-                  kube-controller
-                </div>
+            {/* Visual Control Plane Node Flow Diagram Image */}
+            <div className="relative rounded-2xl overflow-hidden border border-blue-500/30 group shadow-2xl">
+              <img 
+                src="/images/kubernetes_cluster.jpg" 
+                alt="Kubernetes Container Cluster Architecture Diagram" 
+                className="w-full h-auto object-cover rounded-2xl group-hover:scale-105 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent pointer-events-none" />
+              <div className="absolute bottom-3 left-4 text-xs font-mono font-bold text-cyan-300 bg-slate-950/80 px-3 py-1.5 rounded-lg border border-cyan-500/40">
+                Kubernetes Multi-Node Worker & Control Plane Topology
               </div>
             </div>
 

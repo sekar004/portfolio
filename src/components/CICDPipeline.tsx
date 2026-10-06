@@ -66,16 +66,16 @@ export const CICDPipeline: React.FC = () => {
             ))}
           </div>
 
-          {/* Visual Execution Telemetry Bar */}
-          <div className="p-4 rounded-2xl bg-[#050816] light:bg-slate-900 border border-slate-800 font-mono text-xs flex flex-wrap items-center justify-between gap-3 text-slate-300">
-            <div className="flex items-center gap-2">
-              <span className="w-2 h-2 rounded-full bg-emerald-400" />
-              <span className="text-emerald-400 font-bold">[BUILD #142 PASS]</span>
-              <span className="text-slate-400">Duration: 42s</span>
-            </div>
-            <div className="flex items-center gap-4 text-[11px] text-slate-400">
-              <span>Artifact: <strong className="text-cyan-300">app:v2.4.0</strong></span>
-              <span>K8s Cluster: <strong className="text-indigo-400">production-east</strong></span>
+          {/* Visual Execution Telemetry Bar & Artwork Image */}
+          <div className="relative rounded-2xl overflow-hidden border border-blue-500/30 group shadow-2xl mt-4">
+            <img 
+              src="/images/cicd_pipeline.jpg" 
+              alt="CI/CD Pipeline Automation Workflow Illustration" 
+              className="w-full h-auto object-cover rounded-2xl group-hover:scale-105 transition-transform duration-500"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent pointer-events-none" />
+            <div className="absolute bottom-3 left-4 text-xs font-mono font-bold text-cyan-300 bg-slate-950/80 px-3 py-1.5 rounded-lg border border-cyan-500/40">
+              3D Continuous Delivery & Deployment Pipeline Map
             </div>
           </div>
         </div>
