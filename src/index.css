@@ -13,9 +13,9 @@
     transition: background-color 0.25s ease, color 0.25s ease;
   }
 
-  /* Dark mode default - Vibrant Electric Deep Navy (Not pitch dark) */
+  /* Dark mode default - Professional High-End Deep Navy (#0b132b) */
   html.dark body {
-    background-color: #080d21;
+    background-color: #0b132b;
     color: #f1f5f9;
   }
 
