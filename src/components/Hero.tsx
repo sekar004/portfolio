@@ -120,13 +120,26 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResume }) => {
             <div className="relative rounded-2xl glass-panel p-6 sm:p-8 border border-blue-500/30 shadow-2xl space-y-6">
               
               {/* Header Ticker */}
-              <div className="flex items-center justify-between pb-4 border-b border-blue-900/40 light:border-slate-200 text-xs font-mono text-slate-400 mb-6">
+              <div className="flex items-center justify-between pb-3 border-b border-blue-900/40 light:border-slate-200 text-xs font-mono text-slate-400 mb-4">
                 <div className="flex items-center gap-2">
                   <span className="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse" />
                   <span className="text-white light:text-slate-900 font-extrabold">● ENTERPRISE DEVOPS PIPELINE</span>
                 </div>
-                <div className="flex items-center gap-3 text-[11px] text-blue-400 font-bold">
+                <div className="flex items-center gap-3 text-[11px] text-cyan-400 font-bold tracking-wider">
                   <span>Automate</span> • <span>Deploy</span> • <span>Scale</span>
+                </div>
+              </div>
+
+              {/* Grand 3D Cloud Server Rack Graphic Image (As seen in Reference Image 2) */}
+              <div className="relative rounded-2xl overflow-hidden border border-blue-500/30 group shadow-2xl mb-4">
+                <img 
+                  src="/images/hero_cloud.jpg" 
+                  alt="DevOps 3D Cloud Infrastructure & Server Racks" 
+                  className="w-full h-44 sm:h-52 object-cover rounded-2xl group-hover:scale-105 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent pointer-events-none" />
+                <div className="absolute bottom-3 left-4 text-xs font-mono font-bold text-cyan-300 bg-slate-950/80 px-3 py-1 rounded-lg border border-cyan-500/40">
+                  Cloud Infrastructure Command Center
                 </div>
               </div>
 
