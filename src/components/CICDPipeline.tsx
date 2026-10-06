@@ -35,20 +35,20 @@ export const CICDPipeline: React.FC = () => {
         </div>
 
         {/* Pipeline Cards Layout */}
-        <div className="glass-panel rounded-3xl p-6 sm:p-10 border border-blue-500/30 space-y-6">
-          <div className="flex items-center justify-between pb-4 border-b border-blue-900/40">
-            <span className="text-xs font-mono font-bold text-cyan-400 uppercase tracking-wider flex items-center gap-2">
+        <div className="glass-panel rounded-3xl p-6 sm:p-8 border border-blue-500/30 light:border-slate-300 space-y-6">
+          <div className="flex items-center justify-between pb-4 border-b border-blue-900/40 light:border-slate-200">
+            <span className="text-xs font-mono font-bold text-cyan-400 light:text-blue-700 uppercase tracking-wider flex items-center gap-2">
               <span className="w-2.5 h-2.5 rounded-full bg-cyan-400 animate-ping" />
-              Continuous Delivery Cycle
+              Continuous Delivery Execution Cycle
             </span>
-            <span className="text-[11px] font-mono text-emerald-400">100% Automated</span>
+            <span className="text-[11px] font-mono text-emerald-400 light:text-emerald-700 bg-emerald-950/80 light:bg-emerald-100 px-2.5 py-1 rounded border border-emerald-500/30 font-bold">100% Automated</span>
           </div>
 
           <div className="flex flex-wrap items-center justify-between gap-3">
             {cicdStages.map((s, idx) => (
               <React.Fragment key={idx}>
                 <div className="flex flex-col items-center gap-2 group cursor-pointer">
-                  <div className="w-12 h-12 rounded-2xl bg-slate-900/90 light:bg-white border border-blue-500/30 group-hover:border-cyan-400 flex items-center justify-center shadow-lg group-hover:scale-110 transition-all">
+                  <div className="w-12 h-12 rounded-2xl bg-slate-900/90 light:bg-white border border-blue-500/30 light:border-slate-300 group-hover:border-cyan-400 flex items-center justify-center shadow-lg group-hover:scale-110 transition-all">
                     {s.icon}
                   </div>
                   <span className="text-xs font-mono font-bold text-white light:text-slate-900 group-hover:text-cyan-300">
@@ -60,10 +60,23 @@ export const CICDPipeline: React.FC = () => {
                 </div>
 
                 {idx < cicdStages.length - 1 && (
-                  <ArrowRight className="w-4 h-4 text-blue-500 hidden lg:block animate-pulse" />
+                  <ArrowRight className="w-4 h-4 text-blue-500 light:text-blue-600 hidden lg:block animate-pulse" />
                 )}
               </React.Fragment>
             ))}
+          </div>
+
+          {/* Visual Execution Telemetry Bar */}
+          <div className="p-4 rounded-2xl bg-[#050816] light:bg-slate-900 border border-slate-800 font-mono text-xs flex flex-wrap items-center justify-between gap-3 text-slate-300">
+            <div className="flex items-center gap-2">
+              <span className="w-2 h-2 rounded-full bg-emerald-400" />
+              <span className="text-emerald-400 font-bold">[BUILD #142 PASS]</span>
+              <span className="text-slate-400">Duration: 42s</span>
+            </div>
+            <div className="flex items-center gap-4 text-[11px] text-slate-400">
+              <span>Artifact: <strong className="text-cyan-300">app:v2.4.0</strong></span>
+              <span>K8s Cluster: <strong className="text-indigo-400">production-east</strong></span>
+            </div>
           </div>
         </div>
 

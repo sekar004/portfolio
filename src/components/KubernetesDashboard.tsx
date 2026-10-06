@@ -73,8 +73,27 @@ export const KubernetesDashboard: React.FC = () => {
               </div>
             </div>
 
+            {/* Visual Control Plane Node Flow Diagram */}
+            <div className="p-4 rounded-xl bg-[#050816] light:bg-slate-900 border border-slate-800 space-y-2 font-mono">
+              <span className="text-[10px] text-cyan-400 font-bold uppercase tracking-wider block">K8S CONTROL PLANE TOPOLOGY:</span>
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 text-center text-[11px]">
+                <div className="p-2 rounded-lg bg-blue-950/70 border border-blue-500/30 text-cyan-300">
+                  kube-apiserver
+                </div>
+                <div className="p-2 rounded-lg bg-slate-900 border border-purple-500/30 text-purple-300">
+                  etcd storage
+                </div>
+                <div className="p-2 rounded-lg bg-slate-900 border border-emerald-500/30 text-emerald-300">
+                  kube-scheduler
+                </div>
+                <div className="p-2 rounded-lg bg-slate-900 border border-indigo-500/30 text-indigo-300">
+                  kube-controller
+                </div>
+              </div>
+            </div>
+
             {/* Pod Workloads Row */}
-            <div className="space-y-3 pt-2">
+            <div className="space-y-3 pt-1">
               <span className="text-xs font-mono text-slate-400 light:text-slate-600 font-semibold block">DEPLOYED POD WORKLOADS:</span>
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5">
                 {['Frontend Pods', 'Backend Pods', 'API Gateway', 'Microservices'].map((pod, pIdx) => (
