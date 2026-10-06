@@ -20,9 +20,9 @@ export const ProfessionalExperience: React.FC = () => {
       ],
     },
     {
-      period: 'September 2025 – 2026',
-      role: 'DevOps Engineer Intern / Trainee',
-      company: 'Company Name — Add Later',
+      period: 'September 2025 – August 2026',
+      role: 'Cloud DevOps Trainee & Specialist',
+      company: 'DevOps & Cloud Engineering Program',
       current: false,
       bullets: [
         'Trained in cloud infrastructure fundamentals, CI/CD practices, and containerization.',

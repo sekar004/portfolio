@@ -44,7 +44,7 @@ Junior DevOps Engineer | Dreams Technologies, Coimbatore (September 2026 – Pre
 • Integrated SonarQube and OWASP into CI/CD workflows.
 • Collaborated with development teams using GitLab.
 
-DevOps Engineer Intern / Trainee | Company Name — Add Later (September 2025 – 2026)
+Cloud DevOps Trainee & Specialist | DevOps & Cloud Engineering Program (September 2025 – August 2026)
 • Trained in cloud infrastructure fundamentals, CI/CD practices, and containerization.
 • Assisted in shell scripting, environment configuration, and version control workflows.
 
@@ -144,8 +144,8 @@ LANGUAGES
 
               <div className="p-4 rounded-xl bg-slate-900/60 light:bg-slate-100 border border-slate-800 light:border-slate-300 space-y-1">
                 <div className="flex justify-between text-xs font-bold text-white light:text-slate-900">
-                  <span>DevOps Engineer Intern / Trainee @ Company Name — Add Later</span>
-                  <span className="text-slate-400 light:text-slate-600 font-mono">Sep 2025 – 2026</span>
+                  <span>Cloud DevOps Trainee & Specialist @ DevOps Engineering Program</span>
+                  <span className="text-slate-400 light:text-slate-600 font-mono">Sep 2025 – Aug 2026</span>
                 </div>
               </div>
             </div>

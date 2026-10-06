@@ -15,17 +15,6 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResume }) => {
       <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-600/10 rounded-full blur-[120px] pointer-events-none animate-pulse-glow" />
       <div className="absolute bottom-10 right-10 w-96 h-96 bg-purple-600/10 rounded-full blur-[140px] pointer-events-none" />
 
-      {/* Floating DevOps Graphic Badges */}
-      <div className="hidden xl:flex absolute top-28 left-6 items-center gap-2.5 px-3 py-1.5 rounded-xl bg-slate-900/80 light:bg-white border border-blue-500/30 text-[11px] font-mono font-bold text-cyan-300 light:text-blue-700 shadow-xl animate-float-slow opacity-80 pointer-events-none z-20">
-        <KubernetesIcon size={16} />
-        <span>K8s Cluster Node: Active</span>
-      </div>
-
-      <div className="hidden xl:flex absolute bottom-20 left-12 items-center gap-2.5 px-3 py-1.5 rounded-xl bg-slate-900/80 light:bg-white border border-blue-500/30 text-[11px] font-mono font-bold text-emerald-400 light:text-emerald-700 shadow-xl animate-float-slow opacity-80 pointer-events-none z-20" style={{ animationDelay: '2s' }}>
-        <DockerIcon size={16} />
-        <span>Docker Engine v26.0</span>
-      </div>
-
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-8 items-center">
           
