@@ -65,6 +65,30 @@ export const About: React.FC = () => {
               DevOps Engineer with hands-on experience in AWS, Docker, Kubernetes, Jenkins, CI/CD, Git, Linux, and Terraform. Skilled in application deployment, containerization, CI/CD pipeline automation, and cloud infrastructure management. Experienced in troubleshooting deployment and infrastructure issues while ensuring reliable and efficient application delivery.
             </p>
 
+            {/* Compact Graphic Image Card */}
+            <div className="p-3 rounded-2xl glass-panel border border-purple-500/30 flex items-center gap-3.5 shadow-md">
+              <div className="w-28 h-20 shrink-0 rounded-xl overflow-hidden border border-purple-500/30 group relative">
+                <img 
+                  src="/images/terraform_iac.jpg" 
+                  alt="Infrastructure as Code Terraform & Ansible" 
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent pointer-events-none" />
+                <span className="absolute bottom-1 left-1 text-[8px] font-mono font-bold text-purple-300 bg-slate-950/80 px-1.5 py-0.5 rounded border border-purple-500/30">
+                  IaC Visual
+                </span>
+              </div>
+
+              <div>
+                <h4 className="text-xs font-extrabold text-white light:text-slate-900">
+                  Infrastructure as Code (IaC)
+                </h4>
+                <p className="text-[11px] text-slate-300 light:text-slate-600 font-sans mt-0.5">
+                  Automated provisioning using Terraform HCL scripts and Ansible playbooks for zero-drift server configurations.
+                </p>
+              </div>
+            </div>
+
             <div className="pt-1">
               <a 
                 href="#skills" 

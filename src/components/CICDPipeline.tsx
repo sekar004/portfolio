@@ -66,16 +66,28 @@ export const CICDPipeline: React.FC = () => {
             ))}
           </div>
 
-          {/* Visual Execution Telemetry Bar & Artwork Image */}
-          <div className="relative rounded-2xl overflow-hidden border border-blue-500/30 group shadow-2xl mt-4">
-            <img 
-              src="/images/cicd_pipeline.jpg" 
-              alt="CI/CD Pipeline Automation Workflow Illustration" 
-              className="w-full h-auto object-cover rounded-2xl group-hover:scale-105 transition-transform duration-500"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent pointer-events-none" />
-            <div className="absolute bottom-3 left-4 text-xs font-mono font-bold text-cyan-300 bg-slate-950/80 px-3 py-1.5 rounded-lg border border-cyan-500/40">
-              3D Continuous Delivery & Deployment Pipeline Map
+          {/* Visual Execution Telemetry Bar & Compact Artwork Image */}
+          <div className="flex flex-col sm:flex-row items-center gap-4 p-3 rounded-2xl bg-[#050816] light:bg-slate-900 border border-slate-800 font-mono text-xs text-slate-300 shadow-md mt-4">
+            <div className="w-full sm:w-48 h-24 shrink-0 rounded-xl overflow-hidden border border-blue-500/30 group relative">
+              <img 
+                src="/images/cicd_pipeline.jpg" 
+                alt="CI/CD Pipeline Flow" 
+                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+              />
+              <span className="absolute bottom-1 left-1 text-[8px] font-mono font-bold text-cyan-300 bg-slate-950/80 px-1.5 py-0.5 rounded border border-cyan-500/30">
+                Pipeline 3D Map
+              </span>
+            </div>
+
+            <div className="space-y-1.5 flex-1 text-left">
+              <div className="flex items-center justify-between">
+                <span className="text-emerald-400 font-bold text-xs">[BUILD #142 PASS]</span>
+                <span className="text-[10px] text-slate-400">Duration: 42s</span>
+              </div>
+              <div className="flex items-center gap-3 text-[11px] text-slate-300">
+                <span>Artifact: <strong className="text-cyan-300">app:v2.4.0</strong></span>
+                <span>K8s Cluster: <strong className="text-indigo-400 font-bold">prod-east</strong></span>
+              </div>
             </div>
           </div>
         </div>

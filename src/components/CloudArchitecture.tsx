@@ -28,29 +28,31 @@ export const CloudArchitecture: React.FC = () => {
           </p>
         </div>
 
-        {/* Visual Infrastructure Network Diagram Graphic with Real Image */}
-        <div className="mb-8 p-4 sm:p-6 rounded-3xl glass-panel border border-blue-500/30 light:border-slate-300 space-y-4 shadow-2xl">
-          <div className="flex items-center justify-between border-b border-blue-900/40 light:border-slate-200 pb-3">
-            <div className="flex items-center gap-2 text-xs font-mono font-bold text-cyan-400 light:text-blue-700 uppercase tracking-wider">
-              <Network className="w-4 h-4 text-cyan-400 light:text-blue-600" />
-              <span>LIVE MULTI-CLOUD ARCHITECTURE TOPOLOGY</span>
-            </div>
-            <span className="text-[10px] font-mono text-emerald-400 light:text-emerald-700 bg-emerald-950/80 light:bg-emerald-100 px-2.5 py-1 rounded border border-emerald-500/30 font-bold">
-              High Availability • Auto-Scaling
+        {/* Compact DevOps Graphic Visual Card */}
+        <div className="mb-6 p-3 sm:p-4 rounded-2xl glass-panel border border-blue-500/30 light:border-slate-300 shadow-lg flex flex-col sm:flex-row items-center gap-4">
+          <div className="w-full sm:w-64 h-36 sm:h-32 shrink-0 rounded-xl overflow-hidden border border-blue-500/30 group relative shadow-md">
+            <img 
+              src="/images/cloud_architecture.jpg" 
+              alt="AWS & Azure Infrastructure Map" 
+              className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent pointer-events-none" />
+            <span className="absolute bottom-2 left-2 text-[9px] font-mono font-bold text-cyan-300 bg-slate-950/80 px-2 py-0.5 rounded border border-cyan-500/30">
+              Multi-Cloud Map
             </span>
           </div>
 
-          {/* DevOps Visual Graphic Artwork Image */}
-          <div className="relative rounded-2xl overflow-hidden border border-blue-500/30 group shadow-2xl">
-            <img 
-              src="/images/cloud_architecture.jpg" 
-              alt="DevOps Cloud Infrastructure Architecture Diagram" 
-              className="w-full h-auto object-cover rounded-2xl group-hover:scale-105 transition-transform duration-500"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent pointer-events-none" />
-            <div className="absolute bottom-3 left-4 text-xs font-mono font-bold text-cyan-300 bg-slate-950/80 px-3 py-1.5 rounded-lg border border-cyan-500/40">
-              AWS & Azure Hybrid Infrastructure Backbone Map
+          <div className="space-y-1 text-left">
+            <div className="flex items-center gap-2 text-xs font-mono font-bold text-cyan-400 light:text-blue-700 uppercase tracking-wider">
+              <Network className="w-4 h-4 text-cyan-400 light:text-blue-600" />
+              <span>AWS & AZURE CLOUD ARCHITECTURE</span>
             </div>
+            <h4 className="text-sm font-extrabold text-white light:text-slate-900">
+              Resilient Cloud Backbones & VPC Networking
+            </h4>
+            <p className="text-xs text-slate-300 light:text-slate-600 font-sans">
+              Provisioning high-availability cloud infrastructure with VPC subnets, Load Balancers, EC2 auto-scaling groups, and encrypted cloud storage.
+            </p>
           </div>
         </div>
 

@@ -73,16 +73,24 @@ export const KubernetesDashboard: React.FC = () => {
               </div>
             </div>
 
-            {/* Visual Control Plane Node Flow Diagram Image */}
-            <div className="relative rounded-2xl overflow-hidden border border-blue-500/30 group shadow-2xl">
-              <img 
-                src="/images/kubernetes_cluster.jpg" 
-                alt="Kubernetes Container Cluster Architecture Diagram" 
-                className="w-full h-auto object-cover rounded-2xl group-hover:scale-105 transition-transform duration-500"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent pointer-events-none" />
-              <div className="absolute bottom-3 left-4 text-xs font-mono font-bold text-cyan-300 bg-slate-950/80 px-3 py-1.5 rounded-lg border border-cyan-500/40">
-                Kubernetes Multi-Node Worker & Control Plane Topology
+            {/* Visual Control Plane Node Flow Diagram Compact Image */}
+            <div className="flex flex-col sm:flex-row items-center gap-4 p-3 rounded-2xl bg-[#050816] light:bg-slate-900 border border-slate-800 shadow-md">
+              <div className="w-full sm:w-48 h-28 shrink-0 rounded-xl overflow-hidden border border-blue-500/30 group relative">
+                <img 
+                  src="/images/kubernetes_cluster.jpg" 
+                  alt="Kubernetes Cluster Map" 
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+                <span className="absolute bottom-1 left-1 text-[8px] font-mono font-bold text-cyan-300 bg-slate-950/80 px-1.5 py-0.5 rounded border border-cyan-500/30">
+                  Cluster Map
+                </span>
+              </div>
+
+              <div className="space-y-1 font-mono text-xs">
+                <span className="text-cyan-400 font-bold uppercase tracking-wider block text-[11px]">K8S CONTROL PLANE & WORKER NODES</span>
+                <p className="text-[11px] text-slate-300 light:text-slate-400 font-sans leading-relaxed">
+                  Automated pod scheduling, traffic routing via Ingress Nginx, and self-healing cluster nodes.
+                </p>
               </div>
             </div>
 

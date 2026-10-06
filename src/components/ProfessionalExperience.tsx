@@ -92,6 +92,23 @@ export const ProfessionalExperience: React.FC = () => {
                   ))}
                 </ul>
 
+                {/* Compact DevOps Graphic Image Badge inside Card */}
+                {exp.current && (
+                  <div className="pt-2 flex items-center gap-3 p-3 rounded-xl bg-slate-900/60 light:bg-slate-100 border border-blue-500/20 light:border-slate-300">
+                    <div className="w-24 h-16 shrink-0 rounded-lg overflow-hidden border border-blue-500/30 group relative">
+                      <img 
+                        src="/images/docker_cluster.jpg" 
+                        alt="Containerization Workflow" 
+                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                      />
+                    </div>
+                    <div>
+                      <span className="text-xs font-extrabold text-cyan-300 light:text-blue-800 block">Containerization & Microservices</span>
+                      <span className="text-[10px] text-slate-400 light:text-slate-600 font-mono">Docker image optimization & K8s deployments</span>
+                    </div>
+                  </div>
+                )}
+
               </div>
 
             </div>
