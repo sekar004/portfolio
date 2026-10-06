@@ -11,13 +11,13 @@
     transition: background-color 0.25s ease, color 0.25s ease;
   }
 
-  /* Dark mode theme */
+  /* Dark mode default */
   html.dark body {
     background-color: #050814;
     color: #f1f5f9;
   }
 
-  /* Light mode theme - Ultra sharp high contrast */
+  /* Light mode default */
   html.light body {
     background-color: #f8fafc;
     color: #0f172a;
@@ -36,7 +36,7 @@
   border-radius: 4px;
 }
 
-/* Grid background utilities */
+/* Grid Backgrounds */
 html.dark .bg-devops-grid {
   background-size: 36px 36px;
   background-image: 
@@ -47,8 +47,8 @@ html.dark .bg-devops-grid {
 html.light .bg-devops-grid {
   background-size: 36px 36px;
   background-image: 
-    linear-gradient(to right, rgba(37, 99, 235, 0.1) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(37, 99, 235, 0.1) 1px, transparent 1px);
+    linear-gradient(to right, rgba(37, 99, 235, 0.09) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(37, 99, 235, 0.09) 1px, transparent 1px);
 }
 
 html.dark .bg-radial-glow {
@@ -56,12 +56,12 @@ html.dark .bg-radial-glow {
 }
 
 html.light .bg-radial-glow {
-  background: radial-gradient(circle at 50% 20%, rgba(37, 99, 235, 0.12) 0%, rgba(147, 51, 234, 0.05) 40%, rgba(248, 250, 252, 0) 75%);
+  background: radial-gradient(circle at 50% 20%, rgba(37, 99, 235, 0.12) 0%, rgba(147, 51, 234, 0.04) 40%, rgba(248, 250, 252, 0) 75%);
 }
 
 /* Glassmorphism Panel Dark vs Light */
 html.dark .glass-panel {
-  background: rgba(13, 20, 38, 0.78);
+  background: rgba(13, 20, 38, 0.82);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   border: 1px solid rgba(59, 130, 246, 0.25);
@@ -73,10 +73,10 @@ html.light .glass-panel {
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   border: 1px solid #cbd5e1;
-  box-shadow: 0 10px 30px 0 rgba(37, 99, 235, 0.1);
+  box-shadow: 0 10px 30px 0 rgba(37, 99, 235, 0.09);
 }
 
-/* Hover effects */
+/* Glass Hover */
 html.dark .glass-panel-hover:hover {
   border-color: rgba(96, 165, 250, 0.6);
   box-shadow: 0 0 30px rgba(59, 130, 246, 0.35);
@@ -89,66 +89,36 @@ html.light .glass-panel-hover:hover {
   transform: translateY(-3px);
 }
 
-/* Light Mode Comprehensive Typography & Color Overrides */
-html.light .text-white {
-  color: #0f172a !important;
+/* Primary CTA Button - Always Pure White Text on Vibrant Blue Gradient in BOTH themes */
+.btn-primary-cta {
+  background: linear-gradient(135deg, #2563eb 0%, #0284c7 100%) !important;
+  color: #ffffff !important;
+  font-weight: 800 !important;
 }
 
-html.light .text-slate-100 {
-  color: #0f172a !important;
+.btn-primary-cta * {
+  color: #ffffff !important;
 }
 
-html.light .text-slate-200 {
-  color: #1e293b !important;
+.btn-primary-cta:hover {
+  background: linear-gradient(135deg, #1d4ed8 0%, #0369a1 100%) !important;
+  box-shadow: 0 10px 25px rgba(37, 99, 235, 0.4) !important;
 }
 
-html.light .text-slate-300 {
-  color: #334155 !important;
+/* Light Mode Overrides for Labels & Cards */
+html.light .text-hero-title {
+  background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 50%, #0284c7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-html.light .text-slate-400 {
-  color: #475569 !important;
+html.dark .text-hero-title {
+  background: linear-gradient(135deg, #ffffff 0%, #38bdf8 50%, #a855f7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-html.light .text-cyan-300,
-html.light .text-cyan-400 {
-  color: #0284c7 !important;
-}
-
-html.light .text-blue-300,
-html.light .text-blue-400 {
-  color: #1d4ed8 !important;
-}
-
-/* Background Color Adaptations for Light Mode */
-html.light section,
-html.light main {
-  background-color: #f8fafc !important;
-}
-
-html.light [class*="bg-\[\#050814\]"],
-html.light [class*="bg-\[\#070b1a\]"],
-html.light [class*="bg-\[\#03050e\]"],
-html.light [class*="bg-\[\#040712\]"] {
-  background-color: #f8fafc !important;
-}
-
-html.light [class*="bg-slate-900"],
-html.light [class*="bg-\[\#070d20\]"],
-html.light [class*="bg-\[\#080f24\]"],
-html.light [class*="bg-\[\#070e24\]"] {
-  background-color: #ffffff !important;
-  border-color: #cbd5e1 !important;
-  color: #0f172a !important;
-}
-
-html.light [class*="bg-slate-950"],
-html.light [class*="bg-blue-950"] {
-  background-color: #e2e8f0 !important;
-  color: #0f172a !important;
-}
-
-/* Keep Terminal CLI Container dark even in light mode so code is readable */
+/* Terminal CLI Container stays dark in both themes */
 .terminal-window {
   background-color: #090d16 !important;
   color: #f8fafc !important;

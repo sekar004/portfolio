@@ -58,18 +58,18 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenResume, theme, onToggleThe
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
           
-          {/* Left Logo & Brand */}
+          {/* Left Brand */}
           <a href="#home" className="flex items-center gap-3 group">
             <div className="relative flex items-center justify-center w-10 h-10 rounded-xl bg-gradient-to-br from-blue-600 to-indigo-700 text-white font-black shadow-lg shadow-blue-500/30 group-hover:shadow-blue-400/50 transition-all duration-300 border border-blue-400/40">
               <span className="text-lg tracking-wider font-mono">S</span>
               <div className="absolute inset-0 rounded-xl bg-blue-400/20 animate-ping opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none" />
             </div>
             <div className="flex flex-col">
-              <span className="text-lg font-black tracking-tight text-white light:text-slate-900 group-hover:text-blue-500 transition-colors flex items-center gap-1.5">
+              <span className="text-base font-black tracking-tight text-white light:text-slate-900 group-hover:text-blue-500 transition-colors flex items-center gap-1.5">
                 SEKAR S
                 <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" title="System Operational" />
               </span>
-              <span className="text-[10px] font-mono text-blue-400 light:text-blue-600 font-bold tracking-widest uppercase">
+              <span className="text-[10px] font-mono text-cyan-400 light:text-blue-600 font-bold tracking-widest uppercase">
                 DEVOPS COMMAND
               </span>
             </div>
@@ -83,7 +83,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenResume, theme, onToggleThe
                 <a
                   key={link.id}
                   href={link.href}
-                  className={`px-3.5 py-1.5 rounded-full text-xs font-extrabold tracking-wide transition-all duration-200 relative ${
+                  className={`px-3.5 py-1.5 rounded-full text-xs font-bold tracking-wide transition-all duration-200 relative ${
                     isActive 
                       ? 'text-white light:text-white bg-blue-600 border border-blue-400/50 shadow-sm shadow-blue-500/30' 
                       : 'text-slate-300 light:text-slate-800 hover:text-white light:hover:text-blue-600 hover:bg-slate-800/50 light:hover:bg-slate-300/60'
@@ -101,6 +101,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenResume, theme, onToggleThe
           {/* Right Action CTAs: Theme Toggle & Download Resume */}
           <div className="hidden sm:flex items-center gap-3">
             
+            {/* Theme Toggle Button */}
             <button
               onClick={onToggleTheme}
               className="p-2.5 rounded-xl bg-slate-900/80 light:bg-slate-200 border border-blue-500/30 light:border-slate-300 text-blue-400 light:text-blue-700 hover:text-cyan-300 transition-all shadow-md"
@@ -110,15 +111,13 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenResume, theme, onToggleThe
               {theme === 'dark' ? <Sun className="w-4 h-4 text-amber-400" /> : <Moon className="w-4 h-4 text-blue-600" />}
             </button>
 
+            {/* Download Resume Button with crisp white text in both themes */}
             <button
               onClick={onOpenResume}
-              className="relative group overflow-hidden rounded-xl p-[1px] font-semibold focus:outline-none"
+              className="btn-primary-cta px-4 py-2 rounded-xl text-xs font-black flex items-center gap-2 shadow-lg hover:scale-105 transition-all"
             >
-              <span className="absolute inset-0 bg-gradient-to-r from-blue-600 via-cyan-500 to-indigo-600 rounded-xl group-hover:opacity-100 transition-opacity opacity-90" />
-              <span className="relative flex items-center gap-2 px-4 py-2 rounded-[11px] bg-[#090d20] light:bg-blue-600 transition-all duration-300 group-hover:bg-transparent text-xs font-black text-white tracking-wide">
-                <Download className="w-3.5 h-3.5 text-cyan-400 light:text-white group-hover:translate-y-0.5 transition-transform" />
-                Download Resume
-              </span>
+              <Download className="w-3.5 h-3.5 text-white" />
+              <span>Download Resume</span>
             </button>
           </div>
 
@@ -168,10 +167,10 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenResume, theme, onToggleThe
                   setMobileMenuOpen(false);
                   onOpenResume();
                 }}
-                className="w-full py-3 px-4 rounded-xl bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-extrabold text-sm flex items-center justify-center gap-2 shadow-lg shadow-blue-600/30"
+                className="btn-primary-cta w-full py-3 px-4 rounded-xl font-black text-sm flex items-center justify-center gap-2 shadow-lg"
               >
-                <Download className="w-4 h-4" />
-                Download Resume
+                <Download className="w-4 h-4 text-white" />
+                <span>Download Resume</span>
               </button>
             </div>
           </div>
