@@ -10,21 +10,32 @@ interface HeroProps {
 
 export const Hero: React.FC<HeroProps> = ({ onOpenResume }) => {
   return (
-    <section id="home" className="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden bg-devops-grid bg-radial-glow">
-      {/* Background ambient lighting effects */}
+    <section id="home" className="relative pt-24 pb-12 md:pt-32 md:pb-16 overflow-hidden bg-devops-grid bg-radial-glow">
+      {/* Background ambient lighting & graphic circuit elements */}
       <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-600/10 rounded-full blur-[120px] pointer-events-none animate-pulse-glow" />
       <div className="absolute bottom-10 right-10 w-96 h-96 bg-purple-600/10 rounded-full blur-[140px] pointer-events-none" />
 
+      {/* Floating DevOps Graphic Badges */}
+      <div className="hidden xl:flex absolute top-28 left-6 items-center gap-2.5 px-3 py-1.5 rounded-xl bg-slate-900/80 light:bg-white border border-blue-500/30 text-[11px] font-mono font-bold text-cyan-300 light:text-blue-700 shadow-xl animate-float-slow opacity-80 pointer-events-none z-20">
+        <KubernetesIcon size={16} />
+        <span>K8s Cluster Node: Active</span>
+      </div>
+
+      <div className="hidden xl:flex absolute bottom-20 left-12 items-center gap-2.5 px-3 py-1.5 rounded-xl bg-slate-900/80 light:bg-white border border-blue-500/30 text-[11px] font-mono font-bold text-emerald-400 light:text-emerald-700 shadow-xl animate-float-slow opacity-80 pointer-events-none z-20" style={{ animationDelay: '2s' }}>
+        <DockerIcon size={16} />
+        <span>Docker Engine v26.0</span>
+      </div>
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-8 items-center">
           
           {/* Left Side Info Column */}
-          <div className="lg:col-span-6 space-y-6">
+          <div className="lg:col-span-6 space-y-5">
             
             {/* Pill Label */}
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-950/80 light:bg-blue-100 border border-blue-500/30 text-blue-400 light:text-blue-700 text-xs font-bold tracking-wider uppercase shadow-md">
               <span className="w-2 h-2 rounded-full bg-cyan-400 animate-ping" />
-              DEVOPS ENGINEER
+              DEVOPS ENGINEER COMMAND CENTER
             </div>
 
             {/* Main Headings */}

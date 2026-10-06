@@ -7,7 +7,7 @@ interface ResumeCtaProps {
 
 export const ResumeCTA: React.FC<ResumeCtaProps> = ({ onOpenResume }) => {
   return (
-    <section className="py-20 bg-[#070b1a] light:bg-slate-100 relative border-t border-blue-900/20 overflow-hidden">
+    <section className="py-12 bg-[#070b1a] light:bg-slate-100 relative border-t border-blue-900/20 overflow-hidden devops-circuit-overlay">
       
       {/* Background glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[350px] bg-blue-600/10 rounded-full blur-[140px] pointer-events-none" />

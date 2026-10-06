@@ -51,11 +51,11 @@ nothing to commit, working tree clean`,
   };
 
   return (
-    <section className="py-20 bg-[#070b1a] light:bg-slate-100 relative border-t border-blue-900/20">
+    <section className="py-12 bg-[#070b1a] light:bg-slate-100 relative border-t border-blue-900/20 devops-circuit-overlay">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Title */}
-        <div className="text-center max-w-3xl mx-auto mb-12 space-y-3">
+        <div className="text-center max-w-3xl mx-auto mb-8 space-y-2">
           <span className="text-xs font-mono font-bold tracking-widest text-blue-400 uppercase">
             LIVE COMMAND CONSOLE
           </span>

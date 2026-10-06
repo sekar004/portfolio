@@ -32,11 +32,11 @@ export const ProfessionalExperience: React.FC = () => {
   ];
 
   return (
-    <section id="experience" className="py-20 bg-[#070b1a] light:bg-slate-50 relative border-t border-blue-900/20">
+    <section id="experience" className="py-12 bg-[#070b1a] light:bg-slate-50 relative border-t border-blue-900/20 devops-circuit-overlay">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16 space-y-3">
+        <div className="text-center max-w-3xl mx-auto mb-8 space-y-2">
           <span className="text-xs font-mono font-bold tracking-widest text-blue-400 uppercase">
             PROFESSIONAL EXPERIENCE
           </span>
@@ -49,7 +49,7 @@ export const ProfessionalExperience: React.FC = () => {
         </div>
 
         {/* Vertical Timeline */}
-        <div className="max-w-4xl mx-auto relative pl-6 sm:pl-8 border-l-2 border-blue-500/30 space-y-12">
+        <div className="max-w-4xl mx-auto relative pl-6 sm:pl-8 border-l-2 border-blue-500/30 space-y-8">
           {experiences.map((exp, idx) => (
             <div key={idx} className="relative group">
               
