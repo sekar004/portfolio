@@ -8,15 +8,16 @@
   
   body {
     font-family: var(--font-sans);
+    transition: background-color 0.3s ease, color 0.3s ease;
   }
 
-  /* Dark mode defaults */
+  /* Dark mode theme */
   html.dark body {
     background-color: #050814;
     color: #f1f5f9;
   }
 
-  /* Light mode styles */
+  /* Light mode theme - Ultra high contrast, crisp SaaS design */
   html.light body {
     background-color: #f8fafc;
     color: #0f172a;
@@ -38,60 +39,60 @@
   background: #2563eb;
 }
 
-/* Dark & Light Grid Utilities */
+/* Dark & Light Grid Backgrounds */
 html.dark .bg-devops-grid {
-  background-size: 40px 40px;
+  background-size: 36px 36px;
   background-image: 
-    linear-gradient(to right, rgba(59, 130, 246, 0.06) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(59, 130, 246, 0.06) 1px, transparent 1px);
+    linear-gradient(to right, rgba(59, 130, 246, 0.08) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(59, 130, 246, 0.08) 1px, transparent 1px);
 }
 
 html.light .bg-devops-grid {
-  background-size: 40px 40px;
+  background-size: 36px 36px;
   background-image: 
-    linear-gradient(to right, rgba(37, 99, 235, 0.07) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(37, 99, 235, 0.07) 1px, transparent 1px);
+    linear-gradient(to right, rgba(37, 99, 235, 0.08) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(37, 99, 235, 0.08) 1px, transparent 1px);
 }
 
 html.dark .bg-radial-glow {
-  background: radial-gradient(circle at 50% 20%, rgba(59, 130, 246, 0.15) 0%, rgba(147, 51, 234, 0.08) 35%, rgba(5, 8, 20, 0) 70%);
+  background: radial-gradient(circle at 50% 20%, rgba(59, 130, 246, 0.16) 0%, rgba(147, 51, 234, 0.08) 40%, rgba(5, 8, 20, 0) 75%);
 }
 
 html.light .bg-radial-glow {
-  background: radial-gradient(circle at 50% 20%, rgba(59, 130, 246, 0.12) 0%, rgba(147, 51, 234, 0.05) 35%, rgba(248, 250, 252, 0) 70%);
+  background: radial-gradient(circle at 50% 20%, rgba(59, 130, 246, 0.1) 0%, rgba(147, 51, 234, 0.04) 40%, rgba(248, 250, 252, 0) 75%);
 }
 
-/* Glassmorphism Panel Dark/Light Adaptivity */
+/* Glassmorphism Panel Dark vs Light */
 html.dark .glass-panel {
-  background: rgba(13, 20, 38, 0.75);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
-  border: 1px solid rgba(59, 130, 246, 0.2);
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  background: rgba(13, 20, 38, 0.78);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(59, 130, 246, 0.22);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
 }
 
 html.light .glass-panel {
-  background: rgba(255, 255, 255, 0.85);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
-  border: 1px solid rgba(59, 130, 246, 0.25);
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(37, 99, 235, 0.22);
   box-shadow: 0 10px 30px 0 rgba(37, 99, 235, 0.08);
 }
 
-/* Glass Hover Effects */
+/* Glass Hover States */
 html.dark .glass-panel-hover:hover {
-  border-color: rgba(96, 165, 250, 0.5);
-  box-shadow: 0 0 30px rgba(59, 130, 246, 0.3), inset 0 0 15px rgba(59, 130, 246, 0.12);
+  border-color: rgba(96, 165, 250, 0.55);
+  box-shadow: 0 0 30px rgba(59, 130, 246, 0.35), inset 0 0 15px rgba(59, 130, 246, 0.15);
   transform: translateY(-3px);
 }
 
 html.light .glass-panel-hover:hover {
-  border-color: rgba(37, 99, 235, 0.6);
-  box-shadow: 0 12px 35px rgba(37, 99, 235, 0.18);
+  border-color: rgba(37, 99, 235, 0.65);
+  box-shadow: 0 12px 35px rgba(37, 99, 235, 0.16);
   transform: translateY(-3px);
 }
 
-/* Theme Adaptive Text & Section Colors */
+/* Light Mode Text High-Contrast Overrides */
 html.light .text-white {
   color: #0f172a !important;
 }
@@ -112,12 +113,29 @@ html.light .text-slate-400 {
   color: #64748b !important;
 }
 
-/* Glowing Text */
+html.light .bg-\[\#050814\],
+html.light .bg-\[\#070b1a\],
+html.light .bg-\[\#03050e\] {
+  background-color: #f8fafc !important;
+}
+
+html.light .bg-slate-900\/90,
+html.light .bg-slate-900\/80,
+html.light .bg-slate-900\/70,
+html.light .bg-slate-900\/60,
+html.light .bg-slate-900\/40,
+html.light .bg-slate-950 {
+  background-color: #ffffff !important;
+  border-color: rgba(37, 99, 235, 0.2) !important;
+  color: #0f172a !important;
+}
+
+/* Glowing Accent Utilities */
 .text-glow {
   text-shadow: 0 0 12px rgba(59, 130, 246, 0.6);
 }
 
-/* Animations */
+/* Keyframe Animations */
 @keyframes floatSlow {
   0%, 100% { transform: translateY(0px) rotate(0deg); }
   50% { transform: translateY(-10px) rotate(1deg); }
@@ -128,10 +146,19 @@ html.light .text-slate-400 {
   50% { opacity: 0.9; }
 }
 
+@keyframes blinkCursor {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
 .animate-float-slow {
   animation: floatSlow 6s ease-in-out infinite;
 }
 
 .animate-pulse-glow {
   animation: pulseGlow 3s ease-in-out infinite;
+}
+
+.animate-blink {
+  animation: blinkCursor 1s step-end infinite;
 }

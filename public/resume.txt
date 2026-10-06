@@ -1,0 +1,33 @@
+SEKAR S - DEVOPS ENGINEER
+Email: shanmugamsekar004@gmail.com | LinkedIn: linkedin.com/in/sekar-s
+Location: Gobichettipalayam, Tamil Nadu, India
+
+SUMMARY
+DevOps Engineer with hands-on experience in AWS, Docker, Kubernetes, Jenkins, CI/CD, Git, Linux, and Terraform. Skilled in application deployment, containerization, CI/CD pipeline automation, and cloud infrastructure management. Experienced in troubleshooting deployment and infrastructure issues while ensuring reliable and efficient application delivery.
+
+TECHNICAL SKILLS
+• Cloud Platforms: AWS, Azure
+• Containerization & Orchestration: Docker, Kubernetes
+• CI/CD & Version Control: Jenkins, Git, GitHub, GitLab
+• Infrastructure as Code: Terraform, Ansible
+• Web Servers: Nginx, Apache, phpMyAdmin
+• Monitoring & Logging: AWS CloudWatch, Prometheus, Grafana
+• Security & Code Quality: SonarQube, OWASP, ZAP
+• Operating Systems: Linux, Windows, Shell Scripting, Cron Jobs
+
+PROFESSIONAL EXPERIENCE
+Junior DevOps Engineer | Dreams Technologies, Coimbatore (September 2026 – Present)
+• Automated application deployments and infrastructure provisioning on AWS and Azure using Docker and CI/CD pipelines.
+• Implemented and maintained Jenkins pipelines for build, test and release processes.
+• Deployed and managed containerized applications on Kubernetes.
+• Worked with Deployments, Services, ConfigMaps and Ingress.
+• Managed Nginx and Apache web servers/load balancers.
+• Developed shell scripts and cron jobs.
+• Integrated SonarQube and OWASP into CI/CD workflows.
+• Collaborated with development teams using GitLab.
+
+DevOps Engineer Intern / Trainee | Company Name — Add Later (September 2025 – 2026)
+
+EDUCATION
+Bachelor's Degree in Computer Science | Gobi Arts & Science College (2021 – 2024) | 7.0 CGPA
+LANGUAGES: Tamil (Native), English (Professional)

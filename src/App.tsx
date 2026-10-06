@@ -1,18 +1,19 @@
 import React, { useState, useEffect } from 'react';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
+import { TechStack } from './components/TechStack';
 import { About } from './components/About';
-import { TechnicalSkills } from './components/TechnicalSkills';
-import { DevopsWorkflow } from './components/DevopsWorkflow';
-import { CicdAutomation } from './components/CicdAutomation';
-import { KubernetesSection } from './components/KubernetesSection';
-import { CloudInfrastructure } from './components/CloudInfrastructure';
-import { ServerAutomation } from './components/ServerAutomation';
-import { MonitoringObservability } from './components/MonitoringObservability';
-import { SecurityQuality } from './components/SecurityQuality';
 import { ProfessionalExperience } from './components/ProfessionalExperience';
+import { SkillsDashboard } from './components/SkillsDashboard';
+import { DevOpsCommandCenter } from './components/DevOpsCommandCenter';
+import { CloudArchitecture } from './components/CloudArchitecture';
+import { KubernetesDashboard } from './components/KubernetesDashboard';
+import { CICDPipeline } from './components/CICDPipeline';
+import { Projects } from './components/Projects';
+import { MonitoringObservability } from './components/MonitoringObservability';
+import { TerminalSection } from './components/TerminalSection';
 import { Education } from './components/Education';
-import { ResumeCta } from './components/ResumeCta';
+import { ResumeCTA } from './components/ResumeCTA';
 import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
 import { ResumeModal } from './components/ResumeModal';
@@ -22,7 +23,6 @@ export const App: React.FC = () => {
   const [theme, setTheme] = useState<'dark' | 'light'>('dark');
 
   useEffect(() => {
-    // Theme initialization
     const savedTheme = localStorage.getItem('portfolio-theme') as 'dark' | 'light' | null;
     if (savedTheme) {
       setTheme(savedTheme);
@@ -51,28 +51,29 @@ export const App: React.FC = () => {
     <div className={`relative min-h-screen selection:bg-blue-600 selection:text-white transition-colors duration-300 ${
       theme === 'dark' ? 'bg-[#050814] text-slate-100' : 'bg-slate-50 text-slate-900'
     }`}>
-      {/* Navbar with Theme Switcher */}
+      {/* Floating Glass Navbar */}
       <Navbar 
         onOpenResume={handleOpenResume} 
         theme={theme}
         onToggleTheme={handleToggleTheme}
       />
 
-      {/* Main Content Sections */}
+      {/* Main Command Center Sections */}
       <main>
         <Hero onOpenResume={handleOpenResume} />
+        <TechStack />
         <About />
-        <TechnicalSkills />
-        <DevopsWorkflow />
-        <CicdAutomation />
-        <KubernetesSection />
-        <CloudInfrastructure />
-        <ServerAutomation />
-        <MonitoringObservability />
-        <SecurityQuality />
         <ProfessionalExperience />
+        <SkillsDashboard />
+        <DevOpsCommandCenter />
+        <CloudArchitecture />
+        <KubernetesDashboard />
+        <CICDPipeline />
+        <Projects />
+        <MonitoringObservability />
+        <TerminalSection />
         <Education />
-        <ResumeCta onOpenResume={handleOpenResume} />
+        <ResumeCTA onOpenResume={handleOpenResume} />
         <Contact />
       </main>
 

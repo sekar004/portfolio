@@ -11,6 +11,26 @@ export const LinkedinIcon: React.FC<IconProps> = ({ className = "w-5 h-5", size 
   </svg>
 );
 
+export const HelmIcon: React.FC<IconProps> = ({ className = "w-6 h-6", size }) => (
+  <svg className={className} width={size} height={size} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M12 2L3 7v10l9 5 9-5V7l-9-5zm0 2.5l6.5 3.6-6.5 3.6-6.5-3.6L12 4.5zM5 9.5l6 3.3v6.7l-6-3.3V9.5zm14 6.7l-6 3.3v-6.7l6-3.3v6.7z" fill="#0F1689"/>
+  </svg>
+);
+
+export const ArgoCdIcon: React.FC<IconProps> = ({ className = "w-6 h-6", size }) => (
+  <svg className={className} width={size} height={size} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="12" cy="12" r="9" stroke="#EF7B4D" strokeWidth="2"/>
+    <path d="M12 6v6l4 4" stroke="#EF7B4D" strokeWidth="2" strokeLinecap="round"/>
+  </svg>
+);
+
+export const ElkIcon: React.FC<IconProps> = ({ className = "w-6 h-6", size }) => (
+  <svg className={className} width={size} height={size} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect x="3" y="3" width="18" height="18" rx="4" fill="#005571"/>
+    <path d="M7 8h10M7 12h7M7 16h10" stroke="#00BFB3" strokeWidth="2" strokeLinecap="round"/>
+  </svg>
+);
+
 export const AwsIcon: React.FC<IconProps> = ({ className = "w-6 h-6", size }) => (
   <svg className={className} width={size} height={size} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M6.73 12.82c-.87.05-1.57.24-1.95.57-.37.33-.56.76-.56 1.29 0 .42.14.77.42 1.05.28.28.66.42 1.15.42.66 0 1.21-.24 1.66-.71.45-.48.67-1.12.67-1.92v-.7c-.43 0-.96.01-1.39.08z" fill="#FF9900"/>
@@ -33,14 +53,12 @@ export const AzureIcon: React.FC<IconProps> = ({ className = "w-6 h-6", size }) 
 export const DockerIcon: React.FC<IconProps> = ({ className = "w-6 h-6", size }) => (
   <svg className={className} width={size} height={size} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M2.2 13.3c.3 2.8 2.6 5 5.4 5 4.5 0 8.5-2.1 10.9-5.4.3-.4.2-.9-.2-1.1-.3-.2-.8-.1-1.1.2-2.1 2.9-5.5 4.7-9.5 4.7-2.1 0-4-1.6-4.3-3.7-.1-.4-.5-.7-.9-.6-.4.1-.7.5-.6.9z" fill="#2496ED"/>
-    <path d="M1.5 12c.5 0 .9-.4.9-.9V10c0-.5-.4-.9-.9-.9s-.9.4-.9.9v1.1c0 .5.4.9.9.9z" fill="#2496ED"/>
     <rect x="4" y="9" width="3" height="2.5" rx="0.5" fill="#2496ED"/>
     <rect x="7.5" y="9" width="3" height="2.5" rx="0.5" fill="#2496ED"/>
     <rect x="11" y="9" width="3" height="2.5" rx="0.5" fill="#2496ED"/>
     <rect x="7.5" y="6" width="3" height="2.5" rx="0.5" fill="#2496ED"/>
     <rect x="11" y="6" width="3" height="2.5" rx="0.5" fill="#2496ED"/>
     <rect x="14.5" y="9" width="3" height="2.5" rx="0.5" fill="#2496ED"/>
-    <rect x="11" y="3" width="3" height="2.5" rx="0.5" fill="#2496ED"/>
     <path d="M22 11.5c-.7-.5-1.6-.6-2.4-.4-.5-1.1-1.6-1.8-2.8-1.8-.3 0-.6.1-.9.2V9.5c0-.3-.2-.5-.5-.5s-.5.2-.5.5v.3c-1.3-1.2-3.1-2-5-2-4.1 0-7.5 3.4-7.5 7.5 0 .4.3.8.8.8h17.5c.8 0 1.5-.7 1.5-1.5 0-.9-.6-1.7-1.2-2.1z" fill="#2496ED"/>
   </svg>
 );
@@ -55,9 +73,9 @@ export const KubernetesIcon: React.FC<IconProps> = ({ className = "w-6 h-6", siz
 
 export const JenkinsIcon: React.FC<IconProps> = ({ className = "w-6 h-6", size }) => (
   <svg className={className} width={size} height={size} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z" fill="#D24939"/>
-    <path d="M12 6c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6zm0 10c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4z" fill="#D24939"/>
-    <circle cx="12" cy="10" r="1.5" fill="#F0D6B5"/>
+    <circle cx="12" cy="12" r="9" stroke="#D24939" strokeWidth="2"/>
+    <circle cx="12" cy="10" r="2" fill="#D24939"/>
+    <path d="M12 14v4" stroke="#D24939" strokeWidth="2"/>
   </svg>
 );
 
@@ -87,9 +105,6 @@ export const GitLabIcon: React.FC<IconProps> = ({ className = "w-6 h-6", size })
   <svg className={className} width={size} height={size} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M22.6 13l-1.9-5.9c-.1-.3-.4-.5-.7-.5s-.6.2-.7.5l-1.6 5H6.3l-1.6-5c-.1-.3-.4-.5-.7-.5s-.6.2-.7.5L1.4 13c-.1.4 0 .8.3 1.1l9.8 7.1c.3.2.7.2 1 0l9.8-7.1c.3-.3.4-.7.3-1.1z" fill="#FC6D26"/>
     <path d="M12 21.2l-4.2-13h8.4l-4.2 13z" fill="#E24329"/>
-    <path d="M12 21.2l-4.2-13H1.4l10.6 13z" fill="#FCA326"/>
-    <path d="M1.4 13l-1-3.1c-.1-.3 0-.7.3-.9l5.6-4.2 5.7 11.4L1.4 13z" fill="#E24329"/>
-    <path d="M12 21.2l4.2-13h6.4l-10.6 13z" fill="#FCA326"/>
   </svg>
 );
 
@@ -102,7 +117,6 @@ export const GitHubIcon: React.FC<IconProps> = ({ className = "w-6 h-6", size })
 export const PrometheusIcon: React.FC<IconProps> = ({ className = "w-6 h-6", size }) => (
   <svg className={className} width={size} height={size} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 14.5h-2v-4h2v4zm0-6h-2v-2h2v2z" fill="#E6522C"/>
-    <path d="M12 6c-1.1 0-2 .9-2 2v2c0 1.1.9 2 2 2s2-.9 2-2V8c0-1.1-.9-2-2-2z" fill="#E6522C"/>
   </svg>
 );
 
@@ -110,52 +124,47 @@ export const GrafanaIcon: React.FC<IconProps> = ({ className = "w-6 h-6", size }
   <svg className={className} width={size} height={size} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
     <circle cx="12" cy="12" r="9" stroke="#F46800" strokeWidth="2" fill="none"/>
     <path d="M8 14s1.5 2 4 2 4-2 4-2" stroke="#F46800" strokeWidth="2" strokeLinecap="round"/>
-    <circle cx="9" cy="9.5" r="1.5" fill="#F46800"/>
-    <circle cx="15" cy="9.5" r="1.5" fill="#F46800"/>
   </svg>
 );
 
 export const SonarQubeIcon: React.FC<IconProps> = ({ className = "w-6 h-6", size }) => (
   <svg className={className} width={size} height={size} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M4.5 19.5C6.5 17 9 15.5 12 15.5c3 0 5.5 1.5 7.5 4M6.5 15C8 13.5 10 12.5 12 12.5s4 1 5.5 2.5M8.5 10.5C9.5 9.5 10.7 9 12 9s2.5.5 3.5 1.5M11 6c.3-.3.6-.5 1-.5s.7.2 1 .5" stroke="#4E9BCD" strokeWidth="2" strokeLinecap="round"/>
+    <path d="M4.5 19.5C6.5 17 9 15.5 12 15.5c3 0 5.5 1.5 7.5 4M6.5 15C8 13.5 10 12.5 12 12.5s4 1 5.5 2.5" stroke="#4E9BCD" strokeWidth="2" strokeLinecap="round"/>
   </svg>
 );
 
 export const OwaspIcon: React.FC<IconProps> = ({ className = "w-6 h-6", size }) => (
   <svg className={className} width={size} height={size} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M12 2L4 5v6c0 5.55 3.84 10.74 8 12 4.16-1.26 8-5.45 8-12V5l-8-3zm0 4a3 3 0 110 6 3 3 0 010-6zm0 14c-2.5 0-4.7-1.3-6-3.3.1-2 4-3.1 6-3.1s5.9 1.1 6 3.1c-1.3 2-3.5 3.3-6 3.3z" fill="#006699"/>
+    <path d="M12 2L4 5v6c0 5.55 3.84 10.74 8 12 4.16-1.26 8-5.45 8-12V5l-8-3z" fill="#006699"/>
   </svg>
 );
 
 export const ZapIcon: React.FC<IconProps> = ({ className = "w-6 h-6", size }) => (
   <svg className={className} width={size} height={size} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M13 2L3 14h7v8l10-12h-7V2z" fill="#38BDF8" stroke="#0284C7" strokeWidth="1" strokeLinejoin="round"/>
+    <path d="M13 2L3 14h7v8l10-12h-7V2z" fill="#38BDF8"/>
   </svg>
 );
 
 export const LinuxIcon: React.FC<IconProps> = ({ className = "w-6 h-6", size }) => (
   <svg className={className} width={size} height={size} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M12 2C9.2 2 7 4.2 7 7c0 1.8.9 3.4 2.3 4.3C7.6 12.3 6 14.5 6 17v2c0 1.7 1.3 3 3 3h6c1.7 0 3-1.3 3-3v-2c0-2.5-1.6-4.7-3.3-5.7C16.1 10.4 17 8.8 17 7c0-2.8-2.2-5-5-5z" fill="#FCC624"/>
-    <circle cx="10" cy="6.5" r="1" fill="#000"/>
-    <circle cx="14" cy="6.5" r="1" fill="#000"/>
-    <path d="M11 9h2" stroke="#E95420" strokeWidth="1.5" strokeLinecap="round"/>
   </svg>
 );
 
 export const NginxIcon: React.FC<IconProps> = ({ className = "w-6 h-6", size }) => (
   <svg className={className} width={size} height={size} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M12 2L2 7.5v9L12 22l10-5.5v-9L12 2zm4.5 13.5l-4-6v6h-2v-9h2l4 6v-6h2v9h-2z" fill="#009639"/>
+    <path d="M12 2L2 7.5v9L12 22l10-5.5v-9L12 2z" fill="#009639"/>
   </svg>
 );
 
 export const ApacheIcon: React.FC<IconProps> = ({ className = "w-6 h-6", size }) => (
   <svg className={className} width={size} height={size} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z" fill="#D22128"/>
+    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z" fill="#D22128"/>
   </svg>
 );
 
 export const CloudWatchIcon: React.FC<IconProps> = ({ className = "w-6 h-6", size }) => (
   <svg className={className} width={size} height={size} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM14 13v4h-4v-4H7l5-5 5 5h-3z" fill="#FF9900"/>
+    <path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96z" fill="#FF9900"/>
   </svg>
 );
