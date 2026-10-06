@@ -9,7 +9,6 @@ import { DevOpsCommandCenter } from './components/DevOpsCommandCenter';
 import { CloudArchitecture } from './components/CloudArchitecture';
 import { KubernetesDashboard } from './components/KubernetesDashboard';
 import { CICDPipeline } from './components/CICDPipeline';
-import { Projects } from './components/Projects';
 import { MonitoringObservability } from './components/MonitoringObservability';
 import { TerminalSection } from './components/TerminalSection';
 import { Education } from './components/Education';
@@ -69,7 +68,6 @@ export const App: React.FC = () => {
         <CloudArchitecture />
         <KubernetesDashboard />
         <CICDPipeline />
-        <Projects />
         <MonitoringObservability />
         <TerminalSection />
         <Education />

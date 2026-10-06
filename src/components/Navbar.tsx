@@ -18,7 +18,6 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenResume, theme, onToggleThe
     { name: 'Experience', href: '#experience', id: 'experience' },
     { name: 'Skills', href: '#skills', id: 'skills' },
     { name: 'DevOps', href: '#devops', id: 'devops' },
-    { name: 'Projects', href: '#projects', id: 'projects' },
     { name: 'Education', href: '#education', id: 'education' },
     { name: 'Contact', href: '#contact', id: 'contact' },
   ];
