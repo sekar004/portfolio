@@ -27,10 +27,10 @@ export const TechStack: React.FC = () => {
   ];
 
   return (
-    <section className="py-8 bg-[#040712] light:bg-slate-100 border-y border-blue-900/30 overflow-hidden">
+    <section className="py-8 bg-[#040712] light:bg-slate-100 border-y border-slate-800/80 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center gap-2 mb-4 text-xs font-mono text-cyan-400 uppercase tracking-widest font-bold">
-          <span className="w-2 h-2 rounded-full bg-cyan-400 animate-ping" />
+        <div className="flex items-center gap-2 mb-4 text-xs font-mono text-blue-400 uppercase tracking-widest font-bold">
+          <span className="w-2 h-2 rounded-full bg-blue-400 animate-pulse" />
           ENTERPRISE DEVOPS TOOLCHAIN STACK
         </div>
 
@@ -39,7 +39,7 @@ export const TechStack: React.FC = () => {
           {stackItems.map((item, idx) => (
             <div
               key={idx}
-              className="flex items-center gap-2 px-3.5 py-2 rounded-xl bg-slate-900/80 light:bg-white border border-blue-500/20 hover:border-cyan-400 hover:shadow-lg hover:shadow-cyan-500/20 transition-all duration-300 group cursor-default"
+              className="flex items-center gap-2 px-3.5 py-2 rounded-xl bg-slate-900/90 light:bg-white border border-slate-800 light:border-slate-300 hover:border-blue-500/60 transition-all duration-300 group cursor-default"
             >
               <div className="group-hover:scale-110 transition-transform">
                 {item.icon}

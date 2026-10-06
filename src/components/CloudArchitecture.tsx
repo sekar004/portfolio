@@ -4,15 +4,15 @@ import { AwsIcon, AzureIcon } from './TechIcons';
 
 export const CloudArchitecture: React.FC = () => {
   const elements = [
-    { title: 'Compute', desc: 'EC2 / Virtual Machines for container hosting', icon: <Cpu className="w-4 h-4 text-cyan-400" /> },
+    { title: 'Compute', desc: 'EC2 / Virtual Machines for container hosting', icon: <Cpu className="w-4 h-4 text-blue-400" /> },
     { title: 'Networking', desc: 'VPCs, Subnets, Ingress rules & Security Groups', icon: <Network className="w-4 h-4 text-blue-400" /> },
-    { title: 'Storage', desc: 'S3, Persistent Volumes & Container Storage Interfaces', icon: <HardDrive className="w-4 h-4 text-purple-400" /> },
-    { title: 'Deployment', desc: 'Automated CI/CD application deployments', icon: <Server className="w-4 h-4 text-emerald-400" /> },
-    { title: 'Monitoring', desc: 'CloudWatch & Azure Monitor telemetry alerts', icon: <Activity className="w-4 h-4 text-amber-400" /> },
+    { title: 'Storage', desc: 'S3, Persistent Volumes & Container Storage Interfaces', icon: <HardDrive className="w-4 h-4 text-blue-400" /> },
+    { title: 'Deployment', desc: 'Automated CI/CD application deployments', icon: <Server className="w-4 h-4 text-blue-400" /> },
+    { title: 'Monitoring', desc: 'CloudWatch & Azure Monitor telemetry alerts', icon: <Activity className="w-4 h-4 text-blue-400" /> },
   ];
 
   return (
-    <section id="cloud" className="py-12 bg-[#070b1a] light:bg-slate-100 relative border-t border-blue-900/20 devops-circuit-overlay">
+    <section id="cloud" className="py-12 bg-[#070b1a] light:bg-slate-100 relative border-t border-slate-800/80">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Title */}
@@ -29,22 +29,22 @@ export const CloudArchitecture: React.FC = () => {
         </div>
 
         {/* Compact DevOps Graphic Visual Card */}
-        <div className="mb-6 p-3 sm:p-4 rounded-2xl glass-panel border border-blue-500/30 light:border-slate-300 shadow-lg flex flex-col sm:flex-row items-center gap-4">
-          <div className="w-full sm:w-64 h-36 sm:h-32 shrink-0 rounded-xl overflow-hidden border border-blue-500/30 group relative shadow-md">
+        <div className="mb-6 p-3 sm:p-4 rounded-2xl glass-panel border border-slate-800 light:border-slate-300 shadow-lg flex flex-col sm:flex-row items-center gap-4">
+          <div className="w-full sm:w-64 h-36 sm:h-32 shrink-0 rounded-xl overflow-hidden border border-slate-800 light:border-slate-300 group relative shadow-md">
             <img 
               src="/images/cloud_architecture.jpg" 
               alt="AWS & Azure Infrastructure Map" 
               className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent pointer-events-none" />
-            <span className="absolute bottom-2 left-2 text-[9px] font-mono font-bold text-cyan-300 bg-slate-950/80 px-2 py-0.5 rounded border border-cyan-500/30">
+            <span className="absolute bottom-2 left-2 text-[9px] font-mono font-bold text-blue-300 bg-slate-950/80 px-2 py-0.5 rounded border border-blue-500/30">
               Multi-Cloud Map
             </span>
           </div>
 
           <div className="space-y-1 text-left">
-            <div className="flex items-center gap-2 text-xs font-mono font-bold text-cyan-400 light:text-blue-700 uppercase tracking-wider">
-              <Network className="w-4 h-4 text-cyan-400 light:text-blue-600" />
+            <div className="flex items-center gap-2 text-xs font-mono font-bold text-blue-400 light:text-blue-700 uppercase tracking-wider">
+              <Network className="w-4 h-4 text-blue-400 light:text-blue-600" />
               <span>AWS & AZURE CLOUD ARCHITECTURE</span>
             </div>
             <h4 className="text-sm font-extrabold text-white light:text-slate-900">
@@ -60,18 +60,18 @@ export const CloudArchitecture: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           
           {/* AWS Card */}
-          <div className="glass-panel glass-panel-hover rounded-3xl p-6 sm:p-8 border border-amber-500/30 light:border-slate-300 space-y-6">
-            <div className="flex items-center justify-between pb-4 border-b border-amber-500/20 light:border-slate-200">
+          <div className="glass-panel glass-panel-hover rounded-3xl p-6 sm:p-8 border border-slate-800 light:border-slate-300 space-y-6">
+            <div className="flex items-center justify-between pb-4 border-b border-slate-800 light:border-slate-200">
               <div className="flex items-center gap-3">
-                <div className="p-3 rounded-2xl bg-amber-500/10 border border-amber-500/30">
+                <div className="p-3 rounded-2xl bg-slate-900 light:bg-slate-200 border border-slate-800 light:border-slate-300">
                   <AwsIcon size={32} />
                 </div>
                 <div>
                   <h3 className="text-xl font-black text-white light:text-slate-900">AWS Cloud</h3>
-                  <p className="text-xs font-mono text-amber-400 light:text-amber-700">Amazon Web Services</p>
+                  <p className="text-xs font-mono text-blue-400 light:text-blue-700">Amazon Web Services</p>
                 </div>
               </div>
-              <Cloud className="w-6 h-6 text-amber-400" />
+              <Cloud className="w-6 h-6 text-blue-400" />
             </div>
 
             <div className="space-y-2.5">
@@ -88,18 +88,18 @@ export const CloudArchitecture: React.FC = () => {
           </div>
 
           {/* Azure Card */}
-          <div className="glass-panel glass-panel-hover rounded-3xl p-6 sm:p-8 border border-sky-500/30 light:border-slate-300 space-y-6">
-            <div className="flex items-center justify-between pb-4 border-b border-sky-500/20 light:border-slate-200">
+          <div className="glass-panel glass-panel-hover rounded-3xl p-6 sm:p-8 border border-slate-800 light:border-slate-300 space-y-6">
+            <div className="flex items-center justify-between pb-4 border-b border-slate-800 light:border-slate-200">
               <div className="flex items-center gap-3">
-                <div className="p-3 rounded-2xl bg-sky-500/10 border border-sky-500/30">
+                <div className="p-3 rounded-2xl bg-slate-900 light:bg-slate-200 border border-slate-800 light:border-slate-300">
                   <AzureIcon size={32} />
                 </div>
                 <div>
                   <h3 className="text-xl font-black text-white light:text-slate-900">Azure Cloud</h3>
-                  <p className="text-xs font-mono text-sky-400 light:text-sky-700">Microsoft Azure Infrastructure</p>
+                  <p className="text-xs font-mono text-blue-400 light:text-blue-700">Microsoft Azure Infrastructure</p>
                 </div>
               </div>
-              <Cloud className="w-6 h-6 text-sky-400" />
+              <Cloud className="w-6 h-6 text-blue-400" />
             </div>
 
             <div className="space-y-2.5">

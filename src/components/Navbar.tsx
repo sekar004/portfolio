@@ -50,7 +50,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenResume, theme, onToggleThe
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
       scrolled 
         ? theme === 'dark' 
-          ? 'bg-[#050814]/90 backdrop-blur-xl border-b border-blue-500/20 py-3 shadow-xl shadow-blue-950/20' 
+          ? 'bg-[#050814]/90 backdrop-blur-xl border-b border-slate-800 py-3 shadow-xl' 
           : 'bg-white/95 backdrop-blur-xl border-b border-slate-300 py-3 shadow-lg shadow-blue-500/10'
         : 'bg-transparent py-5 border-b border-transparent'
     }`}>
@@ -59,23 +59,22 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenResume, theme, onToggleThe
           
           {/* Left Brand */}
           <a href="#home" className="flex items-center gap-3 group">
-            <div className="relative flex items-center justify-center w-10 h-10 rounded-xl bg-gradient-to-br from-blue-600 to-indigo-700 text-white font-black shadow-lg shadow-blue-500/30 group-hover:shadow-blue-400/50 transition-all duration-300 border border-blue-400/40">
+            <div className="relative flex items-center justify-center w-10 h-10 rounded-xl bg-blue-600 text-white font-black shadow-lg shadow-blue-600/30 group-hover:scale-105 transition-all duration-300 border border-blue-400/40">
               <span className="text-lg tracking-wider font-mono">S</span>
-              <div className="absolute inset-0 rounded-xl bg-blue-400/20 animate-ping opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none" />
             </div>
             <div className="flex flex-col">
-              <span className="text-base font-black tracking-tight text-white light:text-slate-900 group-hover:text-blue-500 transition-colors flex items-center gap-1.5">
+              <span className="text-base font-black tracking-tight text-white light:text-slate-900 group-hover:text-blue-400 transition-colors flex items-center gap-1.5">
                 SEKAR S
                 <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" title="System Operational" />
               </span>
-              <span className="text-[10px] font-mono text-cyan-400 light:text-blue-600 font-bold tracking-widest uppercase">
+              <span className="text-[10px] font-mono text-blue-400 light:text-blue-700 font-bold tracking-widest uppercase">
                 DEVOPS COMMAND
               </span>
             </div>
           </a>
 
           {/* Center Navigation Links (8 links) */}
-          <nav className="hidden lg:flex items-center gap-1 bg-slate-900/60 light:bg-slate-200/80 backdrop-blur-md px-4 py-1.5 rounded-full border border-blue-500/15 light:border-slate-300 shadow-inner">
+          <nav className="hidden lg:flex items-center gap-1 bg-slate-900/80 light:bg-slate-200/80 backdrop-blur-md px-4 py-1.5 rounded-full border border-slate-800 light:border-slate-300 shadow-inner">
             {navLinks.map((link) => {
               const isActive = activeSection === link.id;
               return (
@@ -84,14 +83,11 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenResume, theme, onToggleThe
                   href={link.href}
                   className={`px-3.5 py-1.5 rounded-full text-xs font-bold tracking-wide transition-all duration-200 relative ${
                     isActive 
-                      ? 'text-white light:text-white bg-blue-600 border border-blue-400/50 shadow-sm shadow-blue-500/30' 
-                      : 'text-slate-300 light:text-slate-800 hover:text-white light:hover:text-blue-600 hover:bg-slate-800/50 light:hover:bg-slate-300/60'
+                      ? 'text-white light:text-white bg-blue-600 border border-blue-500 shadow-sm' 
+                      : 'text-slate-300 light:text-slate-800 hover:text-white light:hover:text-blue-600 hover:bg-slate-800/60 light:hover:bg-slate-300/60'
                   }`}
                 >
                   {link.name}
-                  {isActive && (
-                    <span className="absolute -bottom-1 left-1/2 -translate-x-1/2 w-4 h-0.5 bg-blue-400 rounded-full shadow-sm shadow-blue-400" />
-                  )}
                 </a>
               );
             })}
@@ -103,7 +99,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenResume, theme, onToggleThe
             {/* Theme Toggle Button */}
             <button
               onClick={onToggleTheme}
-              className="p-2.5 rounded-xl bg-slate-900/80 light:bg-slate-200 border border-blue-500/30 light:border-slate-300 text-blue-400 light:text-blue-700 hover:text-cyan-300 transition-all shadow-md"
+              className="p-2.5 rounded-xl bg-slate-900/90 light:bg-slate-200 border border-slate-800 light:border-slate-300 text-blue-400 light:text-blue-700 transition-all shadow-md"
               title={`Switch to ${theme === 'dark' ? 'Light' : 'Dark'} Mode`}
               aria-label="Toggle Theme"
             >

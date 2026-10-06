@@ -40,14 +40,14 @@ export const Contact: React.FC = () => {
             {/* Email Card */}
             <a 
               href="mailto:shanmugamsekar004@gmail.com"
-              className="glass-panel glass-panel-hover rounded-2xl p-5 border border-blue-500/20 flex items-center gap-4 group"
+              className="glass-panel glass-panel-hover rounded-2xl p-5 border border-slate-800 light:border-slate-300 flex items-center gap-4 group"
             >
-              <div className="p-3.5 rounded-xl bg-blue-950/80 light:bg-blue-100 text-cyan-400 light:text-blue-600 group-hover:scale-110 transition-transform">
+              <div className="p-3.5 rounded-xl bg-blue-950/80 light:bg-blue-100 text-blue-400 light:text-blue-600 group-hover:scale-110 transition-transform">
                 <Mail className="w-6 h-6" />
               </div>
               <div>
                 <span className="text-[11px] font-mono text-slate-400 light:text-slate-500 block font-bold uppercase">Email</span>
-                <span className="text-sm font-extrabold text-white light:text-slate-900 group-hover:text-cyan-300">
+                <span className="text-sm font-extrabold text-white light:text-slate-900 group-hover:text-blue-400">
                   shanmugamsekar004@gmail.com
                 </span>
               </div>
@@ -58,7 +58,7 @@ export const Contact: React.FC = () => {
               href="https://www.linkedin.com/in/sekar-s/"
               target="_blank"
               rel="noopener noreferrer"
-              className="glass-panel glass-panel-hover rounded-2xl p-5 border border-blue-500/20 flex items-center gap-4 group"
+              className="glass-panel glass-panel-hover rounded-2xl p-5 border border-slate-800 light:border-slate-300 flex items-center gap-4 group"
             >
               <div className="p-3.5 rounded-xl bg-blue-950/80 light:bg-blue-100 text-blue-400 group-hover:scale-110 transition-transform">
                 <LinkedinIcon size={24} />
@@ -76,14 +76,14 @@ export const Contact: React.FC = () => {
               href="https://github.com/sekar004"
               target="_blank"
               rel="noopener noreferrer"
-              className="glass-panel glass-panel-hover rounded-2xl p-5 border border-blue-500/20 flex items-center gap-4 group"
+              className="glass-panel glass-panel-hover rounded-2xl p-5 border border-slate-800 light:border-slate-300 flex items-center gap-4 group"
             >
               <div className="p-3.5 rounded-xl bg-slate-900/90 light:bg-slate-200 text-white light:text-slate-900 group-hover:scale-110 transition-transform">
                 <GitHubIcon size={24} />
               </div>
               <div>
                 <span className="text-[11px] font-mono text-slate-400 light:text-slate-500 block font-bold uppercase">GitHub</span>
-                <span className="text-sm font-extrabold text-white light:text-slate-900 group-hover:text-cyan-300">
+                <span className="text-sm font-extrabold text-white light:text-slate-900 group-hover:text-blue-400">
                   github.com/sekar004
                 </span>
               </div>
@@ -93,7 +93,7 @@ export const Contact: React.FC = () => {
 
           {/* Right Side: Clean Contact Form */}
           <div className="lg:col-span-7">
-            <div className="glass-panel rounded-3xl p-6 sm:p-8 border border-blue-500/30 shadow-2xl">
+            <div className="glass-panel rounded-3xl p-6 sm:p-8 border border-slate-800 light:border-slate-300 shadow-2xl">
               <h3 className="text-xl font-extrabold text-white light:text-slate-900 mb-6">
                 Send a Direct Message
               </h3>
@@ -118,7 +118,7 @@ export const Contact: React.FC = () => {
                       placeholder="Your Full Name"
                       value={formData.name}
                       onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                      className="w-full px-4 py-3 rounded-xl bg-slate-900/90 light:bg-white border border-blue-500/20 text-white light:text-slate-900 placeholder-slate-500 text-sm focus:outline-none focus:border-cyan-400 transition-colors"
+                      className="w-full px-4 py-3 rounded-xl bg-slate-900/90 light:bg-white border border-slate-800 light:border-slate-300 text-white light:text-slate-900 placeholder-slate-500 text-sm focus:outline-none focus:border-blue-500 transition-colors"
                     />
                   </div>
 
@@ -132,7 +132,7 @@ export const Contact: React.FC = () => {
                       placeholder="your.email@domain.com"
                       value={formData.email}
                       onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                      className="w-full px-4 py-3 rounded-xl bg-slate-900/90 light:bg-white border border-blue-500/20 text-white light:text-slate-900 placeholder-slate-500 text-sm focus:outline-none focus:border-cyan-400 transition-colors"
+                      className="w-full px-4 py-3 rounded-xl bg-slate-900/90 light:bg-white border border-slate-800 light:border-slate-300 text-white light:text-slate-900 placeholder-slate-500 text-sm focus:outline-none focus:border-blue-500 transition-colors"
                     />
                   </div>
 
@@ -146,13 +146,13 @@ export const Contact: React.FC = () => {
                       placeholder="How can I help with your cloud infrastructure, CI/CD, or Kubernetes deployments?"
                       value={formData.message}
                       onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                      className="w-full px-4 py-3 rounded-xl bg-slate-900/90 light:bg-white border border-blue-500/20 text-white light:text-slate-900 placeholder-slate-500 text-sm focus:outline-none focus:border-cyan-400 transition-colors resize-none"
+                      className="w-full px-4 py-3 rounded-xl bg-slate-900/90 light:bg-white border border-slate-800 light:border-slate-300 text-white light:text-slate-900 placeholder-slate-500 text-sm focus:outline-none focus:border-blue-500 transition-colors resize-none"
                     />
                   </div>
 
                   <button
                     type="submit"
-                    className="w-full py-3.5 px-6 rounded-xl bg-gradient-to-r from-blue-600 via-cyan-500 to-indigo-600 text-white font-extrabold text-sm flex items-center justify-center gap-2 shadow-lg shadow-blue-600/30 hover:scale-[1.01] transition-all"
+                    className="w-full py-3.5 px-6 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-extrabold text-sm flex items-center justify-center gap-2 shadow-lg shadow-blue-600/30 transition-all"
                   >
                     <Send className="w-4 h-4" />
                     <span>Send Message</span>

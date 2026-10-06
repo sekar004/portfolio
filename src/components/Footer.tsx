@@ -37,13 +37,13 @@ export const Footer: React.FC<FooterProps> = () => {
 
           {/* Center: Quick Navigation Links */}
           <div className="flex flex-wrap items-center justify-center gap-6 text-xs font-semibold">
-            <a href="#home" className="hover:text-cyan-300 transition-colors">Home</a>
-            <a href="#about" className="hover:text-cyan-300 transition-colors">About</a>
-            <a href="#experience" className="hover:text-cyan-300 transition-colors">Experience</a>
-            <a href="#skills" className="hover:text-cyan-300 transition-colors">Skills</a>
-            <a href="#devops" className="hover:text-cyan-300 transition-colors">DevOps</a>
-            <a href="#education" className="hover:text-cyan-300 transition-colors">Education</a>
-            <a href="#contact" className="hover:text-cyan-300 transition-colors">Contact</a>
+            <a href="#home" className="hover:text-blue-400 transition-colors">Home</a>
+            <a href="#about" className="hover:text-blue-400 transition-colors">About</a>
+            <a href="#experience" className="hover:text-blue-400 transition-colors">Experience</a>
+            <a href="#skills" className="hover:text-blue-400 transition-colors">Skills</a>
+            <a href="#devops" className="hover:text-blue-400 transition-colors">DevOps</a>
+            <a href="#education" className="hover:text-blue-400 transition-colors">Education</a>
+            <a href="#contact" className="hover:text-blue-400 transition-colors">Contact</a>
           </div>
 
           {/* Right: Social Links & Back to Top */}
@@ -70,10 +70,10 @@ export const Footer: React.FC<FooterProps> = () => {
 
             <a 
               href="mailto:shanmugamsekar004@gmail.com"
-              className="p-2 rounded-xl bg-slate-900 border border-slate-800 text-slate-300 hover:text-cyan-400 transition-colors"
+              className="p-2 rounded-xl bg-slate-900 border border-slate-800 text-slate-300 hover:text-blue-400 transition-colors"
               title="Email"
             >
-              <Mail className="w-4 h-4 text-cyan-400" />
+              <Mail className="w-4 h-4 text-blue-400" />
             </a>
 
             <button
@@ -90,7 +90,7 @@ export const Footer: React.FC<FooterProps> = () => {
         {/* Bottom Bar */}
         <div className="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono text-slate-500">
           <p>© {new Date().getFullYear()} SEKAR S. All rights reserved.</p>
-          <p className="text-cyan-400 font-bold">Built with passion for DevOps</p>
+          <p className="text-blue-400 font-bold">Built with passion for DevOps</p>
         </div>
       </div>
     </footer>

@@ -49,7 +49,7 @@ export const ProfessionalExperience: React.FC = () => {
         </div>
 
         {/* Vertical Timeline */}
-        <div className="max-w-4xl mx-auto relative pl-6 sm:pl-8 border-l-2 border-blue-500/30 space-y-8">
+        <div className="max-w-4xl mx-auto relative pl-6 sm:pl-8 border-l-2 border-slate-800 space-y-8">
           {experiences.map((exp, idx) => (
             <div key={idx} className="relative group">
               
@@ -59,16 +59,16 @@ export const ProfessionalExperience: React.FC = () => {
                   ? 'bg-blue-600 border-4 border-[#070b1a] light:border-slate-50 shadow-lg shadow-blue-500/50' 
                   : 'bg-slate-800 border-4 border-[#070b1a] light:border-slate-50'
               }`}>
-                <div className={`w-2 h-2 rounded-full ${exp.current ? 'bg-cyan-300 animate-ping' : 'bg-slate-400'}`} />
+                <div className={`w-2 h-2 rounded-full ${exp.current ? 'bg-white animate-ping' : 'bg-slate-400'}`} />
               </div>
 
               {/* Experience Card */}
-              <div className="glass-panel glass-panel-hover rounded-2xl p-6 sm:p-8 border border-blue-500/20 light:border-slate-300 shadow-xl space-y-4">
+              <div className="glass-panel glass-panel-hover rounded-2xl p-6 sm:p-8 border border-slate-800 light:border-slate-300 shadow-xl space-y-4">
                 
-                <div className="flex flex-wrap items-center justify-between gap-2 pb-4 border-b border-blue-900/30 light:border-slate-200">
+                <div className="flex flex-wrap items-center justify-between gap-2 pb-4 border-b border-slate-800 light:border-slate-200">
                   <div>
-                    <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-md bg-blue-950/80 light:bg-blue-100 border border-blue-500/30 light:border-blue-300 text-xs font-mono font-bold text-cyan-300 light:text-blue-800 mb-2">
-                      <Calendar className="w-3.5 h-3.5 text-cyan-400 light:text-blue-600" />
+                    <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-md bg-blue-950/80 light:bg-blue-100 border border-blue-500/30 light:border-blue-300 text-xs font-mono font-bold text-blue-300 light:text-blue-800 mb-2">
+                      <Calendar className="w-3.5 h-3.5 text-blue-400 light:text-blue-600" />
                       {exp.period}
                     </span>
                     <h3 className="text-xl font-extrabold text-white light:text-slate-900">
@@ -94,8 +94,8 @@ export const ProfessionalExperience: React.FC = () => {
 
                 {/* Compact DevOps Graphic Image Badge inside Card */}
                 {exp.current && (
-                  <div className="pt-2 flex items-center gap-3 p-3 rounded-xl bg-slate-900/60 light:bg-slate-100 border border-blue-500/20 light:border-slate-300">
-                    <div className="w-24 h-16 shrink-0 rounded-lg overflow-hidden border border-blue-500/30 group relative">
+                  <div className="pt-2 flex items-center gap-3 p-3 rounded-xl bg-slate-900/60 light:bg-slate-100 border border-slate-800 light:border-slate-300">
+                    <div className="w-24 h-16 shrink-0 rounded-lg overflow-hidden border border-slate-800 light:border-slate-300 group relative">
                       <img 
                         src="/images/docker_cluster.jpg" 
                         alt="Containerization Workflow" 
@@ -103,7 +103,7 @@ export const ProfessionalExperience: React.FC = () => {
                       />
                     </div>
                     <div>
-                      <span className="text-xs font-extrabold text-cyan-300 light:text-blue-800 block">Containerization & Microservices</span>
+                      <span className="text-xs font-extrabold text-blue-300 light:text-blue-800 block">Containerization & Microservices</span>
                       <span className="text-[10px] text-slate-400 light:text-slate-600 font-mono">Docker image optimization & K8s deployments</span>
                     </div>
                   </div>

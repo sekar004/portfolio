@@ -3,46 +3,46 @@ import { ArrowRight, Wrench, RefreshCw, BookOpen } from 'lucide-react';
 
 export const About: React.FC = () => {
   const cards = [
-    { title: 'Problem Solver', desc: 'Expert in troubleshooting complex deployment & infrastructure failures.', icon: <Wrench className="w-5 h-5 text-cyan-400" /> },
-    { title: 'Automation Mindset', desc: 'Eliminating manual toil with Infrastructure as Code & CI/CD pipelines.', icon: <RefreshCw className="w-5 h-5 text-purple-400" /> },
-    { title: 'Continuous Learner', desc: 'Constantly evolving with Kubernetes, cloud-native tech & DevSecOps.', icon: <BookOpen className="w-5 h-5 text-emerald-400" /> },
+    { title: 'Problem Solver', desc: 'Expert in troubleshooting complex deployment & infrastructure failures.', icon: <Wrench className="w-5 h-5 text-blue-400" /> },
+    { title: 'Automation Mindset', desc: 'Eliminating manual toil with Infrastructure as Code & CI/CD pipelines.', icon: <RefreshCw className="w-5 h-5 text-blue-400" /> },
+    { title: 'Continuous Learner', desc: 'Constantly evolving with Kubernetes, cloud-native tech & DevSecOps.', icon: <BookOpen className="w-5 h-5 text-blue-400" /> },
   ];
 
   return (
-    <section id="about" className="py-12 bg-[#050814] light:bg-slate-50 relative border-t border-blue-900/20 devops-circuit-overlay">
+    <section id="about" className="py-12 bg-[#050814] light:bg-slate-50 relative border-t border-slate-800/80">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* DevOps Infrastructure Metrics Quick Banner */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-8 p-4 rounded-2xl glass-panel border border-blue-500/30 font-mono">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-8 p-4 rounded-2xl glass-panel border border-slate-800 light:border-slate-300 font-mono">
           <div className="flex items-center gap-3">
             <div className="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse" />
             <div>
               <span className="text-[10px] text-slate-400 light:text-slate-600 block uppercase font-bold">Uptime SLA</span>
-              <span className="text-sm font-extrabold text-emerald-400 light:text-emerald-600">99.99% Operational</span>
+              <span className="text-sm font-extrabold text-emerald-400 light:text-emerald-700">99.99% Operational</span>
             </div>
           </div>
 
-          <div className="flex items-center gap-3 border-l border-slate-800/80 light:border-slate-300 pl-3">
-            <div className="w-2.5 h-2.5 rounded-full bg-cyan-400 animate-ping" />
+          <div className="flex items-center gap-3 border-l border-slate-800 light:border-slate-300 pl-3">
+            <div className="w-2.5 h-2.5 rounded-full bg-blue-400" />
             <div>
               <span className="text-[10px] text-slate-400 light:text-slate-600 block uppercase font-bold">CI/CD Automation</span>
-              <span className="text-sm font-extrabold text-cyan-400 light:text-blue-700">100% Automated</span>
+              <span className="text-sm font-extrabold text-blue-400 light:text-blue-700">100% Automated</span>
             </div>
           </div>
 
-          <div className="flex items-center gap-3 border-l border-slate-800/80 light:border-slate-300 pl-3">
-            <div className="w-2.5 h-2.5 rounded-full bg-indigo-400" />
+          <div className="flex items-center gap-3 border-l border-slate-800 light:border-slate-300 pl-3">
+            <div className="w-2.5 h-2.5 rounded-full bg-blue-400" />
             <div>
               <span className="text-[10px] text-slate-400 light:text-slate-600 block uppercase font-bold">Deployments</span>
               <span className="text-sm font-extrabold text-white light:text-slate-900">Zero Downtime</span>
             </div>
           </div>
 
-          <div className="flex items-center gap-3 border-l border-slate-800/80 light:border-slate-300 pl-3">
-            <div className="w-2.5 h-2.5 rounded-full bg-purple-400" />
+          <div className="flex items-center gap-3 border-l border-slate-800 light:border-slate-300 pl-3">
+            <div className="w-2.5 h-2.5 rounded-full bg-blue-400" />
             <div>
               <span className="text-[10px] text-slate-400 light:text-slate-600 block uppercase font-bold">IaC Coverage</span>
-              <span className="text-sm font-extrabold text-purple-400 light:text-purple-700">Terraform & Ansible</span>
+              <span className="text-sm font-extrabold text-blue-400 light:text-blue-700">Terraform & Ansible</span>
             </div>
           </div>
         </div>
@@ -66,15 +66,15 @@ export const About: React.FC = () => {
             </p>
 
             {/* Compact Graphic Image Card */}
-            <div className="p-3 rounded-2xl glass-panel border border-purple-500/30 flex items-center gap-3.5 shadow-md">
-              <div className="w-28 h-20 shrink-0 rounded-xl overflow-hidden border border-purple-500/30 group relative">
+            <div className="p-3 rounded-2xl glass-panel border border-slate-800 light:border-slate-300 flex items-center gap-3.5 shadow-md">
+              <div className="w-28 h-20 shrink-0 rounded-xl overflow-hidden border border-slate-800 light:border-slate-300 group relative">
                 <img 
                   src="/images/terraform_iac.jpg" 
                   alt="Infrastructure as Code Terraform & Ansible" 
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent pointer-events-none" />
-                <span className="absolute bottom-1 left-1 text-[8px] font-mono font-bold text-purple-300 bg-slate-950/80 px-1.5 py-0.5 rounded border border-purple-500/30">
+                <span className="absolute bottom-1 left-1 text-[8px] font-mono font-bold text-blue-300 bg-slate-950/80 px-1.5 py-0.5 rounded border border-blue-500/30">
                   IaC Visual
                 </span>
               </div>
@@ -92,7 +92,7 @@ export const About: React.FC = () => {
             <div className="pt-1">
               <a 
                 href="#skills" 
-                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-blue-600/20 hover:bg-blue-600/30 border border-blue-500/40 text-blue-300 light:text-blue-700 text-xs font-semibold transition-all group"
+                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-blue-600/15 hover:bg-blue-600/25 border border-blue-500/30 text-blue-400 light:text-blue-700 text-xs font-bold transition-all group"
               >
                 <span>Explore Technical Stack</span>
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
@@ -106,9 +106,9 @@ export const About: React.FC = () => {
             {cards.map((card, idx) => (
               <div 
                 key={idx}
-                className="glass-panel glass-panel-hover rounded-2xl p-4 sm:p-5 border border-blue-500/25 light:border-slate-300 flex items-center gap-4 group"
+                className="glass-panel glass-panel-hover rounded-2xl p-4 sm:p-5 border border-slate-800 light:border-slate-300 flex items-center gap-4 group"
               >
-                <div className="p-3 rounded-xl bg-slate-900/90 light:bg-slate-100 border border-blue-500/20 light:border-slate-300 shrink-0 group-hover:scale-110 transition-transform">
+                <div className="p-3 rounded-xl bg-slate-900/90 light:bg-slate-100 border border-slate-800 light:border-slate-300 shrink-0 group-hover:scale-110 transition-transform">
                   {card.icon}
                 </div>
                 <div>
