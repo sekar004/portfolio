@@ -5,12 +5,8 @@ import { TechStack } from './components/TechStack';
 import { About } from './components/About';
 import { ProfessionalExperience } from './components/ProfessionalExperience';
 import { SkillsDashboard } from './components/SkillsDashboard';
-import { DevOpsCommandCenter } from './components/DevOpsCommandCenter';
 import { CloudArchitecture } from './components/CloudArchitecture';
 import { KubernetesDashboard } from './components/KubernetesDashboard';
-import { CICDPipeline } from './components/CICDPipeline';
-import { MonitoringObservability } from './components/MonitoringObservability';
-import { TerminalSection } from './components/TerminalSection';
 import { Education } from './components/Education';
 import { ResumeCTA } from './components/ResumeCTA';
 import { Contact } from './components/Contact';
@@ -57,19 +53,15 @@ export const App: React.FC = () => {
         onToggleTheme={handleToggleTheme}
       />
 
-      {/* Main Command Center Sections */}
+      {/* Main Portfolio Sections */}
       <main>
         <Hero onOpenResume={handleOpenResume} />
         <TechStack />
         <About />
         <ProfessionalExperience />
         <SkillsDashboard />
-        <DevOpsCommandCenter />
         <CloudArchitecture />
         <KubernetesDashboard />
-        <CICDPipeline />
-        <MonitoringObservability />
-        <TerminalSection />
         <Education />
         <ResumeCTA onOpenResume={handleOpenResume} />
         <Contact />

@@ -1,8 +1,8 @@
 import React from 'react';
 import { 
-  ArrowRight, Download, Mail, User
+  ArrowRight, Download, Mail
 } from 'lucide-react';
-import { AwsIcon, DockerIcon, KubernetesIcon, JenkinsIcon, GitIcon, GitHubIcon, LinkedinIcon } from './TechIcons';
+import { AwsIcon, DockerIcon, KubernetesIcon, JenkinsIcon, GitHubIcon, LinkedinIcon } from './TechIcons';
 
 interface HeroProps {
   onOpenResume: () => void;
@@ -23,8 +23,8 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResume }) => {
             
             {/* Pill Label */}
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-950/80 light:bg-blue-100 border border-blue-500/30 text-blue-400 light:text-blue-700 text-xs font-bold tracking-wider uppercase shadow-md">
-              <span className="w-2 h-2 rounded-full bg-cyan-400 animate-ping" />
-              DEVOPS ENGINEER COMMAND CENTER
+              <span className="w-2 h-2 rounded-full bg-blue-400 animate-pulse" />
+              DEVOPS ENGINEER PORTFOLIO
             </div>
 
             {/* Main Headings */}
@@ -104,123 +104,65 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResume }) => {
 
           </div>
 
-          {/* Right Side Visual Command Center */}
+          {/* Right Side Personal Engineer Showcase Card */}
           <div className="lg:col-span-6 relative">
             <div className="relative rounded-2xl glass-panel p-6 sm:p-8 border border-slate-800 light:border-slate-300 shadow-2xl space-y-6">
               
-              {/* Header Ticker */}
-              <div className="flex items-center justify-between pb-3 border-b border-slate-800 light:border-slate-200 text-xs font-mono text-slate-400 mb-4">
+              {/* Card Header Bar */}
+              <div className="flex items-center justify-between pb-3 border-b border-slate-800 light:border-slate-200 text-xs font-mono text-slate-400">
                 <div className="flex items-center gap-2">
                   <span className="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse" />
-                  <span className="text-white light:text-slate-900 font-extrabold">● ENTERPRISE DEVOPS PIPELINE</span>
+                  <span className="text-white light:text-slate-900 font-extrabold">ENGINEERING PROFILE</span>
                 </div>
-                <div className="flex items-center gap-3 text-[11px] text-blue-400 font-bold tracking-wider">
-                  <span>Automate</span> • <span>Deploy</span> • <span>Scale</span>
-                </div>
+                <span className="text-[11px] text-blue-400 font-bold tracking-wider uppercase">
+                  Available for DevOps Roles
+                </span>
               </div>
 
-              {/* Grand 3D Cloud Server Rack Graphic Image */}
-              <div className="relative rounded-2xl overflow-hidden border border-slate-800 group shadow-2xl mb-4">
+              {/* Cloud Architecture Image Banner */}
+              <div className="relative rounded-2xl overflow-hidden border border-slate-800 group shadow-xl">
                 <img 
                   src="/images/hero_cloud.jpg" 
-                  alt="DevOps 3D Cloud Infrastructure & Server Racks" 
+                  alt="DevOps Cloud Infrastructure Visual" 
                   className="w-full h-44 sm:h-52 object-cover rounded-2xl group-hover:scale-105 transition-transform duration-500"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent pointer-events-none" />
-                <div className="absolute bottom-3 left-4 text-xs font-mono font-bold text-blue-300 bg-slate-950/80 px-3 py-1 rounded-lg border border-blue-500/40">
-                  Cloud Infrastructure Command Center
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-950/85 via-slate-950/30 to-transparent pointer-events-none" />
+                <div className="absolute bottom-3 left-4 right-4 flex items-center justify-between text-xs font-mono">
+                  <span className="font-bold text-blue-300 bg-slate-950/90 px-3 py-1 rounded-lg border border-blue-500/30">
+                    Cloud & Kubernetes Infrastructure
+                  </span>
+                  <span className="text-emerald-400 font-bold bg-slate-950/90 px-2.5 py-1 rounded-lg border border-emerald-500/30">
+                    99.99% Uptime
+                  </span>
                 </div>
               </div>
 
-              {/* Main Visual Flow Grid */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              {/* Key Quick Spec Cards */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs font-mono">
                 
-                {/* Visual Pipeline Flow Node List */}
-                <div className="bg-[#070d20] light:bg-slate-100 rounded-2xl p-4 border border-slate-800 light:border-slate-300 space-y-2 font-mono text-xs">
-                  <div className="text-[10px] text-blue-400 font-bold mb-2">FLOW ARCHITECTURE:</div>
-                  
-                  <div className="p-2 rounded bg-slate-900/90 light:bg-white border border-slate-800 flex items-center gap-2">
-                    <User className="w-3.5 h-3.5 text-blue-400" />
-                    <span className="font-bold text-slate-200 light:text-slate-800">Developer</span>
-                  </div>
-                  <div className="text-center text-blue-400 text-xs">↓</div>
-
-                  <div className="p-2 rounded bg-slate-900/90 light:bg-white border border-slate-800 flex items-center gap-2">
-                    <GitIcon size={14} />
-                    <span className="font-bold text-slate-200 light:text-slate-800">Git / GitLab</span>
-                  </div>
-                  <div className="text-center text-blue-400 text-xs">↓</div>
-
-                  <div className="p-2 rounded bg-slate-900/90 light:bg-white border border-slate-800 flex items-center gap-2">
-                    <JenkinsIcon size={14} />
-                    <span className="font-bold text-slate-200 light:text-slate-800">Jenkins / CI-CD</span>
-                  </div>
-                  <div className="text-center text-blue-400 text-xs">↓</div>
-
-                  <div className="p-2 rounded bg-slate-900/90 light:bg-white border border-slate-800 flex items-center gap-2">
-                    <DockerIcon size={14} />
-                    <span className="font-bold text-slate-200 light:text-slate-800">Docker</span>
-                  </div>
-                  <div className="text-center text-blue-400 text-xs">↓</div>
-
-                  <div className="p-2 rounded bg-slate-900/90 light:bg-white border border-slate-800 flex items-center gap-2">
-                    <KubernetesIcon size={14} />
-                    <span className="font-bold text-slate-200 light:text-slate-800">Kubernetes</span>
-                  </div>
-                  <div className="text-center text-blue-400 text-xs">↓</div>
-
-                  <div className="p-2 rounded bg-slate-900/90 light:bg-white border border-slate-800 flex items-center gap-2">
-                    <AwsIcon size={14} />
-                    <span className="font-bold text-slate-200 light:text-slate-800">AWS / Azure</span>
-                  </div>
+                <div className="p-3.5 rounded-xl bg-slate-900/90 light:bg-slate-100 border border-slate-800 light:border-slate-300 space-y-1">
+                  <span className="text-[10px] text-slate-400 light:text-slate-500 font-bold uppercase block">Current Role</span>
+                  <span className="font-extrabold text-white light:text-slate-900 block">Junior DevOps Engineer</span>
+                  <span className="text-[11px] text-blue-400 light:text-blue-700 font-medium">Dreams Technologies</span>
                 </div>
 
-                {/* Infrastructure Status Panel */}
-                <div className="bg-[#070d20] light:bg-slate-100 rounded-2xl p-4 border border-slate-800 light:border-slate-300 space-y-3 font-mono">
-                  <div className="text-[10px] text-blue-400 font-bold mb-2">INFRASTRUCTURE STATUS:</div>
-                  
-                  <div className="p-3 rounded-xl bg-slate-900/90 light:bg-white border border-slate-800 space-y-1">
-                    <div className="flex items-center justify-between text-xs">
-                      <span className="font-bold text-white light:text-slate-900">K8s Node</span>
-                      <span className="text-[10px] text-emerald-400 font-bold">ONLINE</span>
-                    </div>
-                    <div className="w-full bg-slate-800 light:bg-slate-200 h-1.5 rounded-full overflow-hidden">
-                      <div className="bg-emerald-400 h-full w-[95%]" />
-                    </div>
-                  </div>
-
-                  <div className="p-3 rounded-xl bg-slate-900/90 light:bg-white border border-slate-800 space-y-1">
-                    <div className="flex items-center justify-between text-xs">
-                      <span className="font-bold text-white light:text-slate-900">Cloud Infrastructure</span>
-                      <span className="text-[10px] text-emerald-400 font-bold">ACTIVE</span>
-                    </div>
-                    <div className="w-full bg-slate-800 light:bg-slate-200 h-1.5 rounded-full overflow-hidden">
-                      <div className="bg-blue-400 h-full w-[99%]" />
-                    </div>
-                  </div>
-
-                  <div className="p-3 rounded-xl bg-slate-900/90 light:bg-white border border-slate-800 space-y-1">
-                    <div className="flex items-center justify-between text-xs">
-                      <span className="font-bold text-white light:text-slate-900">Jenkins Agent</span>
-                      <span className="text-[10px] text-blue-400 font-bold">RUNNING</span>
-                    </div>
-                    <div className="w-full bg-slate-800 light:bg-slate-200 h-1.5 rounded-full overflow-hidden">
-                      <div className="bg-blue-500 h-full w-[100%]" />
-                    </div>
-                  </div>
-
-                  <div className="p-3 rounded-xl bg-slate-900/90 light:bg-white border border-slate-800 space-y-1">
-                    <div className="flex items-center justify-between text-xs">
-                      <span className="font-bold text-white light:text-slate-900">Monitoring</span>
-                      <span className="text-[10px] text-emerald-400 font-bold">HEALTHY</span>
-                    </div>
-                    <div className="w-full bg-slate-800 light:bg-slate-200 h-1.5 rounded-full overflow-hidden">
-                      <div className="bg-emerald-400 h-full w-[100%]" />
-                    </div>
-                  </div>
-
+                <div className="p-3.5 rounded-xl bg-slate-900/90 light:bg-slate-100 border border-slate-800 light:border-slate-300 space-y-1">
+                  <span className="text-[10px] text-slate-400 light:text-slate-500 font-bold uppercase block">Core Competencies</span>
+                  <span className="font-extrabold text-white light:text-slate-900 block">AWS, Docker, K8s, CI/CD</span>
+                  <span className="text-[11px] text-blue-400 light:text-blue-700 font-medium">Terraform & Ansible</span>
                 </div>
 
+              </div>
+
+              {/* Core Skill Icons Strip */}
+              <div className="pt-2 border-t border-slate-800 light:border-slate-200 flex items-center justify-between gap-2">
+                <span className="text-[11px] font-mono text-slate-400 font-bold">PRIMARY STACK:</span>
+                <div className="flex items-center gap-2">
+                  <div className="p-1.5 rounded-lg bg-slate-900 border border-slate-800" title="AWS"><AwsIcon size={18} /></div>
+                  <div className="p-1.5 rounded-lg bg-slate-900 border border-slate-800" title="Docker"><DockerIcon size={18} /></div>
+                  <div className="p-1.5 rounded-lg bg-slate-900 border border-slate-800" title="Kubernetes"><KubernetesIcon size={18} /></div>
+                  <div className="p-1.5 rounded-lg bg-slate-900 border border-slate-800" title="Jenkins"><JenkinsIcon size={18} /></div>
+                </div>
               </div>
 
             </div>

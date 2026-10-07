@@ -41,7 +41,7 @@ export const Footer: React.FC<FooterProps> = () => {
             <a href="#about" className="hover:text-blue-400 transition-colors">About</a>
             <a href="#experience" className="hover:text-blue-400 transition-colors">Experience</a>
             <a href="#skills" className="hover:text-blue-400 transition-colors">Skills</a>
-            <a href="#devops" className="hover:text-blue-400 transition-colors">DevOps</a>
+            <a href="#cloud" className="hover:text-blue-400 transition-colors">Cloud & K8s</a>
             <a href="#education" className="hover:text-blue-400 transition-colors">Education</a>
             <a href="#contact" className="hover:text-blue-400 transition-colors">Contact</a>
           </div>
