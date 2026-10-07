@@ -15,11 +15,11 @@ payment-worker-8b9a0c1d2e-k98sq    1/1     Running   0          2d18h
 frontend-web-6d5c4b3a2f-p45tr      1/1     Running   0          4d2h`,
     },
     {
-      cmd: 'docker ps --format "table {{.Names}}\\t{{.Status}}\\t{{.Ports}}"',
-      output: `NAMES                  STATUS          PORTS
-nginx-load-balancer    Up 4 days       0.0.0.0:80->80/tcp, 0.0.0.0:443->443/tcp
-jenkins-master-node    Up 12 days      0.0.0.0:8080->8080/tcp
-sonarqube-server       Up 12 days      0.0.0.0:9000->9000/tcp`,
+      cmd: 'docker ps',
+      output: `CONTAINER ID   IMAGE                  COMMAND                  CREATED        STATUS        PORTS
+e9b21a48f72c   nginx:alpine           "/docker-entrypoint.…"   4 days ago     Up 4 days     0.0.0.0:80->80/tcp, 0.0.0.0:443->443/tcp
+a1b2c3d4e5f6   jenkins/jenkins:lts    "/usr/bin/tini -- /r…"   12 days ago    Up 12 days    0.0.0.0:8080->8080/tcp
+f6e5d4c3b2a1   sonarqube:community    "/opt/sonarqube/bin/…"   12 days ago    Up 12 days    0.0.0.0:9000->9000/tcp`,
     },
     {
       cmd: 'git status',
@@ -51,19 +51,19 @@ nothing to commit, working tree clean`,
   };
 
   return (
-    <section className="py-12 bg-[#070b1a] light:bg-slate-100 relative border-t border-slate-800/80">
+    <section className="py-16 bg-[#050816] light:bg-slate-50 relative border-t border-slate-800/80">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Title */}
-        <div className="text-center max-w-3xl mx-auto mb-8 space-y-2">
-          <span className="text-xs font-mono font-bold tracking-widest text-blue-400 uppercase">
+        <div className="text-center max-w-3xl mx-auto mb-10 space-y-2">
+          <span className="text-xs font-mono font-bold tracking-widest text-blue-400 light:text-blue-700 uppercase">
             LIVE COMMAND CONSOLE
           </span>
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-white light:text-slate-900">
+          <h2 className="text-3xl sm:text-4xl font-black text-white light:text-slate-900">
             DevOps Command Terminal
           </h2>
-          <p className="text-slate-400 light:text-slate-600 text-sm">
-            Interactive command-line execution preview for Kubernetes, Docker, Git, and system administration.
+          <p className="text-slate-400 light:text-slate-600 text-sm font-medium">
+            Interactive command-line execution preview for Kubernetes, Docker, Git, and Linux administration.
           </p>
         </div>
 

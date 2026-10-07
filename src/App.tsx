@@ -5,8 +5,13 @@ import { TechStack } from './components/TechStack';
 import { About } from './components/About';
 import { ProfessionalExperience } from './components/ProfessionalExperience';
 import { SkillsDashboard } from './components/SkillsDashboard';
+import { DevOpsWorkflow } from './components/DevOpsWorkflow';
+import { DevOpsArchitecture } from './components/DevOpsArchitecture';
+import { Projects } from './components/Projects';
 import { CloudArchitecture } from './components/CloudArchitecture';
 import { KubernetesDashboard } from './components/KubernetesDashboard';
+import { MonitoringObservability } from './components/MonitoringObservability';
+import { TerminalSection } from './components/TerminalSection';
 import { Education } from './components/Education';
 import { ResumeCTA } from './components/ResumeCTA';
 import { Contact } from './components/Contact';
@@ -44,7 +49,7 @@ export const App: React.FC = () => {
 
   return (
     <div className={`relative min-h-screen selection:bg-blue-600 selection:text-white transition-colors duration-300 ${
-      theme === 'dark' ? 'bg-[#050814] text-slate-100' : 'bg-slate-50 text-slate-900'
+      theme === 'dark' ? 'bg-[#050816] text-slate-100' : 'bg-slate-50 text-slate-900'
     }`}>
       {/* Floating Glass Navbar */}
       <Navbar 
@@ -60,8 +65,13 @@ export const App: React.FC = () => {
         <About />
         <ProfessionalExperience />
         <SkillsDashboard />
+        <DevOpsWorkflow />
+        <DevOpsArchitecture />
+        <Projects />
         <CloudArchitecture />
         <KubernetesDashboard />
+        <MonitoringObservability />
+        <TerminalSection />
         <Education />
         <ResumeCTA onOpenResume={handleOpenResume} />
         <Contact />

@@ -16,7 +16,7 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
     // Generate a formatted plain text resume file for download
     const resumeText = `===================================================================
 SEKAR S - DEVOPS ENGINEER
-Email: shanmugamsekar004@gmail.com | LinkedIn: linkedin.com/in/sekar-s
+Email: shanmugamsekar004@gmail.com | LinkedIn: linkedin.com/in/sekar-s/ | GitHub: github.com/sekar004
 Location: Gobichettipalayam, Tamil Nadu, India
 ===================================================================
 
@@ -34,7 +34,7 @@ TECHNICAL SKILLS
 • Operating Systems: Linux, Windows, Shell Scripting, Cron Jobs
 
 PROFESSIONAL EXPERIENCE
-Junior DevOps Engineer | Dreams Technologies, Coimbatore (September 2026 – Present)
+Junior DevOps Engineer | Dreams Technologies, Coimbatore (August 2024 – Present)
 • Automated application deployments and infrastructure provisioning on AWS and Azure using Docker and CI/CD pipelines.
 • Implemented and maintained Jenkins pipelines for build, test and release processes.
 • Deployed and managed containerized applications on Kubernetes.
@@ -44,7 +44,7 @@ Junior DevOps Engineer | Dreams Technologies, Coimbatore (September 2026 – Pre
 • Integrated SonarQube and OWASP into CI/CD workflows.
 • Collaborated with development teams using GitLab.
 
-Cloud DevOps Trainee & Specialist | DevOps & Cloud Engineering Program (September 2025 – August 2026)
+Cloud DevOps Trainee & Specialist | DevOps & Cloud Engineering Program (February 2024 – August 2024)
 • Trained in cloud infrastructure fundamentals, CI/CD practices, and containerization.
 • Assisted in shell scripting, environment configuration, and version control workflows.
 
@@ -87,7 +87,7 @@ LANGUAGES
           </button>
         </div>
 
-        {/* Modal Body (Scrollable document view) */}
+        {/* Modal Body */}
         <div className="p-6 overflow-y-auto space-y-6 font-sans text-slate-200 light:text-slate-800">
           
           {/* Resume Header */}
@@ -95,7 +95,7 @@ LANGUAGES
             <h1 className="text-2xl font-extrabold text-white light:text-slate-900">SEKAR S</h1>
             <p className="text-sm font-mono text-blue-400 light:text-blue-700 font-bold">DevOps Engineer</p>
             <p className="text-xs text-slate-400 light:text-slate-600 mt-1">
-              shanmugamsekar004@gmail.com • linkedin.com/in/sekar-s/ • Gobichettipalayam
+              shanmugamsekar004@gmail.com • linkedin.com/in/sekar-s/ • github.com/sekar004
             </p>
           </div>
 
@@ -133,7 +133,7 @@ LANGUAGES
               <div className="p-4 rounded-xl bg-slate-900/60 light:bg-slate-100 border border-slate-800 light:border-slate-300 space-y-2">
                 <div className="flex justify-between text-xs font-bold text-white light:text-slate-900">
                   <span>Junior DevOps Engineer @ Dreams Technologies, Coimbatore</span>
-                  <span className="text-blue-400 light:text-blue-700 font-mono">Sep 2026 – Present</span>
+                  <span className="text-blue-400 light:text-blue-700 font-mono">Aug 2024 – Present</span>
                 </div>
                 <ul className="text-xs text-slate-300 light:text-slate-700 space-y-1 list-disc list-inside">
                   <li>Automated deployments & infra provisioning on AWS/Azure using Docker & CI/CD.</li>
@@ -145,7 +145,7 @@ LANGUAGES
               <div className="p-4 rounded-xl bg-slate-900/60 light:bg-slate-100 border border-slate-800 light:border-slate-300 space-y-1">
                 <div className="flex justify-between text-xs font-bold text-white light:text-slate-900">
                   <span>Cloud DevOps Trainee & Specialist @ DevOps Engineering Program</span>
-                  <span className="text-slate-400 light:text-slate-600 font-mono">Sep 2025 – Aug 2026</span>
+                  <span className="text-slate-400 light:text-slate-600 font-mono">Feb 2024 – Aug 2024</span>
                 </div>
               </div>
             </div>
@@ -154,7 +154,7 @@ LANGUAGES
         </div>
 
         {/* Modal Footer Actions */}
-        <div className="flex items-center justify-end gap-3 px-6 py-4 border-t border-blue-900/40 light:border-slate-200 bg-slate-900/90 light:bg-slate-100">
+        <div className="flex items-center justify-end gap-3 px-6 py-4 border-t border-slate-800 light:border-slate-200 bg-slate-900/90 light:bg-slate-100">
           <button
             onClick={onClose}
             className="px-4 py-2 rounded-xl bg-slate-800 light:bg-slate-200 text-slate-300 light:text-slate-800 text-xs font-semibold hover:text-white"
@@ -163,7 +163,7 @@ LANGUAGES
           </button>
           <button
             onClick={handleDownload}
-            className="btn-primary-cta px-5 py-2 rounded-xl text-white text-xs font-bold flex items-center gap-2 shadow-lg shadow-cyan-500/30"
+            className="px-5 py-2 rounded-xl bg-blue-600 hover:bg-blue-500 text-white text-xs font-extrabold flex items-center gap-2 shadow-lg shadow-blue-600/30 transition-all border border-blue-400/40"
           >
             <Download className="w-4 h-4 text-white" />
             <span>Download Resume File</span>
